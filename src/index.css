@@ -678,6 +678,7 @@ footer ul li a:hover{
 }
 .flower-wrapper{
     background-color: #fff;
+    overflow: hidden;
 }
 .flower-container h1{
     text-align: center;
@@ -689,7 +690,6 @@ footer ul li a:hover{
     width: 400px;
     margin: 0 auto;
     overflow: hidden;
-    /* border-radius: 1rem 1rem 0 0; */
 }
 .flower-wrapper .gallery-showroom .dots{
     left: 200px;
@@ -697,7 +697,7 @@ footer ul li a:hover{
 .flower-info-container{
     max-width: 400px;
     margin: auto;
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
     border-radius: 0 0 1rem 1rem;
 }
 .flower-info-container h2{
@@ -935,5 +935,25 @@ footer ul li a:hover{
     .total-sale .h-0{
         font-size: 3.5rem;
     }    
+    /* products */
+    .flower-wrapper{
+        max-width: 960px;
+        margin: 2rem auto 4rem;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 1rem 1rem 1rem 6rem;
+        box-shadow: 0 0 10px rgba(255, 233, 160, 0.5);
+    }
+    .flower-wrapper .gallery-showroom{
+        flex-basis: 400px;
+        margin:0 auto 0 0;
+    } 
+    .flower-info-container{
+        max-width: calc(100% - 400px);
+        font-size: 0.85rem;
+    }
+    .flower-info-container .svg-icons{
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 

@@ -30,14 +30,16 @@ function Flower() {
         <div>
           <h1 className='cursive'>{cvet.name}</h1>
           <div className='flower-wrapper'>
-            <Gallery images={cvet.img} width={400} />
+            <div>
+             <Gallery images={cvet.img} width={400} />
+            </div>
             <div className='flower-info-container black'>
               <h2 className='text-center'>{cvet.name && cvet.name}</h2>
               <p>{cvet.description && cvet.description}</p>
               <ul>
-                <li><strong>Životni vek biljke:</strong> {cvet.lifetime && cvet.lifetime}</li>
-                <li><strong>Izdržljivost:</strong> {cvet.endurance && cvet.endurance}</li>
-                <li><strong>Mesto sadnje:</strong> {cvet.place && cvet.place}</li>
+                <li><strong className='gray'>Životni vek biljke:</strong> {cvet.lifetime && cvet.lifetime}</li>
+                <li><strong className='gray'>Izdržljivost:</strong> {cvet.endurance && cvet.endurance}</li>
+                <li><strong className='gray'>Mesto sadnje:</strong> {cvet.place && cvet.place}</li>
               </ul>
               <div className="d-flex svg-icons">
                 {cvet.height && 
@@ -66,7 +68,7 @@ function Flower() {
                 }
               </div>
               <div>
-                Vreme sadnje:
+                <span className='gray'>Vreme sadnje:</span>
                 <table>
                   <tbody>
                     <tr className='t-row'>

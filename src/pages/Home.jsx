@@ -8,9 +8,9 @@ import Testimonials from "../components/Testimonials";
 import Gallery from "../components/Gallery";
 import FindUs from "../components/FindUs";
 
-import kaliopa from "../productsImg/kaliopa3.jpg";
+import kaliopa from "../productsImg/kaliopa1.jpg";
 import verbena from "../productsImg/verbena3.jpg";
-import sanpatijans from "../productsImg/sanpatijans2.jpg";
+import hrizantema from "../productsImg/hrizantema3.jpg";
 
 import stadion from "../img/stadion.jpg";
 import jezero from "../img/jezero.jpg";
@@ -58,10 +58,10 @@ function Home() {
         </h2>
         <div className="products-display">
           <div className="first-img">
-            <Link to='/naše-cveće/kaliopa'><img src={kaliopa} alt="kaliopa" /></Link>
+            <Link to='/naše-cveće/hrizantema'><img src={hrizantema} alt="hrizantema" /></Link>
           </div>
           <div className="middle-img">
-            <Link to='/naše-cveće/sanpatiens'><img src={sanpatijans} alt="sanpatijans" /></Link>
+            <Link to='/naše-cveće/kaliopa'><img src={kaliopa} alt="kaliopa" /></Link>
           </div>
           <div className="fake-img">&nbsp;</div>
           <div className="last-img">
@@ -79,6 +79,9 @@ function Home() {
           </h2>
           <ul className="black">
             <li>
+              <FaCheckCircle /> Uređenje dvorišta i parkova
+            </li>
+            <li>
               <FaCheckCircle /> Proizvodnja i prodaja cveća
             </li>
             <li>
@@ -88,7 +91,10 @@ function Home() {
               <FaCheckCircle /> Proizvodnja i prodaja četinara
             </li>
             <li>
-              <FaCheckCircle /> Uređenje dvorišta i parkova
+              <FaCheckCircle /> Proizvodnja i prodaja lišćara
+            </li>
+            <li>
+              <FaCheckCircle /> Proizvodnja i prodaja ukrasnog žbunja
             </li>
           </ul>
         </div>
