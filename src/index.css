@@ -742,6 +742,9 @@ footer ul li a:hover{
     margin: 2rem auto;
 }
 /* TREES PAGE */
+.tree-page-hero{
+    background: url(./img/drvece-hero.jpg) no-repeat center center / cover;
+}
 .tree-intro{
     padding-bottom: 6rem;
 }
@@ -754,6 +757,13 @@ footer ul li a:hover{
 }
 .conifers-container .products-display-ul li a:hover{
     box-shadow: 0 0 15px 5px rgba(15, 16, 20, 0.5);
+}
+.deciduous-pic-container{
+    background-color: #fff;
+}
+.deciduous-pic{
+    background: url(./img/listopadno.jpg) no-repeat center top / cover;
+    min-height: 60vh;
 }
 /* SINGLE TREE PAGE */
 .tree-container{
