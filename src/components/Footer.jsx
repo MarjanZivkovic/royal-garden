@@ -21,7 +21,7 @@ function Footer() {
                     <Link to="/naše-cveće" className='gray'>Naše cveće</Link>
                 </li>
                 <li>
-                    <Link to="/naši-četinari" className='gray'>Naši četinari</Link>
+                    <Link to="/naše-drveće" className='gray'>Naše drveće</Link>
                 </li>
                 <li>
                     <Link to="/naše-usluge" className='gray'>Naše usluge</Link>

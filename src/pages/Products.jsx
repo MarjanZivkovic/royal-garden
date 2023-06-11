@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import cvece from '../data/cvece';
+import {FaArrowUp, FaArrowDown} from 'react-icons/fa';
 
 function Products() {
   return (
@@ -20,6 +21,7 @@ function Products() {
       </section>
       <section>
         <div className="wrapper">
+          <p className="offers text-center yellow">Iz ponude izdvajamo</p>
           <ul className='products-display-ul d-flex'>
             {cvece.map( item =>(
               <li key={item.name} className='text-center'>
@@ -30,6 +32,11 @@ function Products() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+      <section className='ask-for-more'>
+        <div className="wrapper">
+          <p className='cursive'>Ovo <FaArrowUp className='yellow'/> je samo deo asortimana cveća iz našeg rasadnika. Naša <span className='yellow'>ponuda se stalno obogaćuje</span>, stoga ako niste pronašli cvet koji tražite slobodno nas kontaktirajte. <FaArrowDown className='yellow'/></p>
         </div>
       </section>
     </>

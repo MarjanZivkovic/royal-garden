@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Products from "./pages/Products";
 import Flower from "./pages/Flower";
 import Conifers from "./pages/Conifers";
+import Tree from "./pages/Tree";
 import Services from "./pages/Services";
 import ErrorPage from "./pages/ErrorPage";
 
@@ -24,7 +25,8 @@ const router = createBrowserRouter([
       {path: '/o-nama', element: <About />},
       {path: '/naše-cveće', element: <Products />},
       {path: '/naše-cveće/:flowerName', element: <Flower />},
-      {path: '/naši-četinari', element: <Conifers />},
+      {path: '/naše-drveće', element: <Conifers />},
+      {path: '/naše-drveće/:treeName', element: <Tree />},
       {path: '/naše-usluge', element: <Services />},
     ]
   }

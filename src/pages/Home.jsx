@@ -82,19 +82,25 @@ function Home() {
               <FaCheckCircle /> Uređenje dvorišta i parkova
             </li>
             <li>
-              <FaCheckCircle /> Proizvodnja i prodaja cveća
+              Proizvodnja i prodaja:
             </li>
             <li>
-              <FaCheckCircle /> Proizvodnja i prodaja rasada
+              <FaCheckCircle />  Cveća
             </li>
             <li>
-              <FaCheckCircle /> Proizvodnja i prodaja četinara
+              <FaCheckCircle /> Rasada
             </li>
             <li>
-              <FaCheckCircle /> Proizvodnja i prodaja lišćara
+              <FaCheckCircle /> Četinara
             </li>
             <li>
-              <FaCheckCircle /> Proizvodnja i prodaja ukrasnog žbunja
+              <FaCheckCircle /> Lišćara
+            </li>
+            <li>
+              <FaCheckCircle /> Ukrasnog žbunja
+            </li>
+            <li>
+              <FaCheckCircle /> Začinskog bilja
             </li>
           </ul>
         </div>
@@ -125,7 +131,7 @@ function Home() {
               <span className="cursive yellow">Četinari</span>
           </h2>
           <p>Dodajte zelenilo u Vaš svet tokom cele godine. <br /> Pogledajte našu ponudu četinara.</p>
-          <Link className="link-btn" to="/naši-četinari">vidite sve</Link>
+          <Link className="link-btn" to="/naše-drveće">vidite sve</Link>
         </div>
       </section>
       <Testimonials />

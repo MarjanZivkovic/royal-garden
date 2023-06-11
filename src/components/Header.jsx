@@ -46,7 +46,7 @@ function Header() {
             <NavLink to="/naše-cveće" onClick={() => {navigateToPage("/naše-cveće")}}>Naše cveće</NavLink>
           </li>
           <li>
-            <NavLink to="/naši-četinari" onClick={() => {navigateToPage("/naši-proizvodi")}}>Naši četinari</NavLink>
+            <NavLink to="/naše-drveće" onClick={() => {navigateToPage("/naše-drveće")}}>Naše drveće</NavLink>
           </li>
           <li>
             <NavLink to="/naše-usluge" onClick={() => {navigateToPage("/naše-usluge")}}>Naše usluge</NavLink>

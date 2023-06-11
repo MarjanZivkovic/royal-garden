@@ -71,7 +71,7 @@ export const cvece = [
     },
     {
         name: 'verbena',
-        description: 'Verbena je puzavica za žardinjere,viseće korpe,posebno ili u kobinaciji sa drugim puzavicama,može se saditi i u baštice gde kad procveta izgleda kao cvetni tepih',
+        description: 'Verbena je puzavica za žardinjere, viseće korpe, posebno ili u kobinaciji sa drugim puzavicama,može se saditi i u baštice gde kad procveta izgleda kao cvetni tepih.',
         lifetime: 'višegodišnja',
         endurance: 'prezimljava u kući',
         place: 'saksija, bašta',
