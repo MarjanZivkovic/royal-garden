@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import cetinari from '../data/cetinari';
+import liscari from '../data/liscari';
+import zbunovi from '../data/zbunovi';
+
 import {FaArrowUp, FaArrowDown} from 'react-icons/fa';
 
 
@@ -16,11 +20,22 @@ function Conifers() {
       </main>
       <section className='products-intro about-us tree-intro'>
         <div className="wrapper">
+          <div className='tree-links'>
+            <Link className="link-btn" to="/naše-drveće/#četinari">
+             Četinari
+            </Link>
+            <Link className="link-btn" to="/o-nama">
+              lišćari
+            </Link>
+            <Link className="link-btn" to="/o-nama">
+              žbunje
+            </Link>
+          </div>
           <h3 className='cursive'>Osetite mirnoću našeg <span className='yellow'>zimzelenog i listopadnog</span> drveća!</h3>
           <p>Nudimo Vam širok izbor <span className="yellow">lišćara, četinara, dekorativnog žbunja,</span> od patuljastih formi do velikih džinova, u svim nijansama zelene, zlatno-žute, plave, plavo-sive i srebrne boje.</p>
         </div>
       </section>
-      <section className='conifers-container'>
+      <section className='conifers-container' id='četinari'>
         <div className="wrapper">
           <h2 className="title transformed-up">
             Naši <span className="d-block cursive black">Četinari</span>
@@ -39,14 +54,48 @@ function Conifers() {
           </ul>
         </div>
       </section>
-      <section className='deciduous-pic-container'>
+      <section className='deciduous-pic-container' id='lišćari'>
         <div className="wrapper deciduous-pic">&nbsp;</div>
       </section>
       <section className='deciduous-container'>
         <div className="wrapper">
-        <h2 className="title transformed-up">
-            Naši <span className="d-block cursive black">Lišćari</span>
+          <h2 className="title transformed-up transformed-up-more">
+            Naši <span className="d-block cursive">Lišćari</span>
           </h2>
+          <p className='black tree-copy'>Osetite <span className="gray">lepotu promene godišnjih doba</span> uz našu bogatu kolekciju listopadnog drveća. Naši lišćari nude senku i privatnost i neizostavni su deo dobre pejzažne arhitekture. Nudimo Vam <span className="gray">širok izbor drveća</span> različitog kolorita lišća, cvetova i oblika krošanja.</p>
+          <p className="offers text-center black">Iz ponude izdvajamo</p>
+          <ul className='products-display-ul d-flex'>
+            {liscari.map( item =>(
+              <li key={item.name} className='text-center'>
+                <Link to={`/naše-drveće/${item.name}`}>
+                  <img src={item.img[0]} alt={item.name} />
+                  <span>{item.name}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+      <section className='deciduous-pic-container' id='ukrasno-žbunje'>
+        <div className="wrapper deciduous-pic bushes-pic">&nbsp;</div>
+      </section>
+      <section className='conifers-container'>
+        <div className="wrapper">
+          <h2 className="title transformed-up transformed-up-more">
+            Ukrasno <span className="d-block cursive">Žbunje</span>
+          </h2>
+          <p className='black tree-copy'>Ulepšajte izgled Vaše bašte našom <span className="gray">bogatom kolekcijom dekorativnog žbunja</span>. Ukrasno žbunje može biti savršen dodatak Vašem vrtu, koji će označiti njegove granice i izazvati interesovanje prolaznika. U ponudi su <span className="gray">razne varijante zimzelenih i cvetnih grmova</span>, različitih boja, veličina i oblika.</p>
+          <p className="offers text-center black">Iz ponude izdvajamo</p>
+          <ul className='products-display-ul d-flex'>
+            {zbunovi.map( item =>(
+              <li key={item.name} className='text-center'>
+                <Link to={`/naše-drveće/${item.name}`}>
+                  <img src={item.img[0]} alt={item.name} />
+                  <span>{item.name}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
       <section className='ask-for-more'>

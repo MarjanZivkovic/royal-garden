@@ -28,7 +28,7 @@ function About() {
       <section className='our-story black'>
         <div className="wrapper">
           <div className="big-num-container d-flex transformed-up">
-            <NumCounter target={25} duration={800}/>
+            <NumCounter target={25} duration={1500}/>
             <div className='yellow'>
               Godina <span className='black d-block'>sa Vama</span> 
             </div>
@@ -69,7 +69,7 @@ function About() {
           <p className='black'>Misija <strong>Royal Garden Milenković</strong> je da kreira životno okruženje koje usrećuje i inspiriše. Kroz našu posvećenost izvrsnosti, kvalitetne biljke i obraćanje pažnje na svaki detalj, stvaramo personalizovana i održiva rešenja koja unapređuju Vaš život.</p>
         </div>
       </section>
-      <section className='our-team'>
+      <section className='our-team testimonials'>
         <div className="wrapper">
           <div className="big-num-container smaller-nums d-flex transformed-up">
             <div className='black'>
@@ -77,9 +77,9 @@ function About() {
             </div>
             <NumCounter target={70} duration={1500}/>
           </div>
-          <h2 className="title transformed-up">
+          {/* <h2 className="title transformed-up">
             Naš <span className="d-block">Tim</span>
-          </h2>
+          </h2> */}
         </div>
       </section>
       <section className='sales testimonials'>
@@ -95,7 +95,7 @@ function About() {
           </ul>
           <div className='total-sale d-flex'>
             <span>Više od</span>
-            <NumCounter target={12000000} duration={1500}/>
+            <NumCounter target={12000000} duration={3000}/>
             <span>prodatih sadnica</span>
           </div>
         </div>

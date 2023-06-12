@@ -644,6 +644,7 @@ footer ul li a:hover{
     margin: 2rem 0 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-size: 0.9rem;
     font-weight: 200;
 }
 .products-display-ul{
@@ -748,22 +749,38 @@ footer ul li a:hover{
 .tree-intro{
     padding-bottom: 6rem;
 }
+.about-us.tree-intro .link-btn{
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+}
 .conifers-container{
     background-color: #fff;
     padding-bottom: 6rem;
 }
-.conifers-container .products-display-ul li a{
+.conifers-container .products-display-ul li a, .deciduous-container .products-display-ul li a{
     border: 1px solid var(--primary-black);
 }
-.conifers-container .products-display-ul li a:hover{
+.conifers-container .products-display-ul li a:hover, .deciduous-container .products-display-ul li a:hover{
     box-shadow: 0 0 15px 5px rgba(15, 16, 20, 0.5);
 }
-.deciduous-pic-container{
+.deciduous-pic-container, .deciduous-container{
     background-color: #fff;
 }
 .deciduous-pic{
     background: url(./img/listopadno.jpg) no-repeat center top / cover;
     min-height: 60vh;
+    border-radius: 1rem 1rem 0 0;
+}
+.bushes-pic{
+    background: url(./img/zbunje1.jpg) no-repeat center bottom / cover;
+}
+
+.transformed-up-more{
+    transform: translateY(-150%);
+}
+.deciduous-container .tree-copy{
+    margin-left: auto;
+    margin-top: 0;
 }
 /* SINGLE TREE PAGE */
 .tree-container{
@@ -955,9 +972,18 @@ footer ul li a:hover{
     .sales ul{
         width: fit-content;
     }
-    /* tree page */
+    /* trees page */
     .tree-copy{
         width: 50%;
+    }
+    .tree-links{
+        position: absolute;
+        right: 0;
+        top: -12rem;
+    }
+    .about-us.tree-intro .link-btn{
+        position: relative;
+        top: 0;
     }
 }
 @media (min-width: 960px){

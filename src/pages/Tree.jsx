@@ -5,6 +5,10 @@ import {FaArrowLeft} from 'react-icons/fa';
 // import Gallery from '../components/Gallery';
 
 import cetinari from '../data/cetinari';
+import liscari from '../data/liscari';
+import zbunovi from '../data/zbunovi';
+
+
 import visina from '../treeImg/visina-cet.svg';
 import sirina from '../treeImg/sirina-cet.svg';
 import rastojanje from '../treeImg/rastojanje-cet.svg';
@@ -15,7 +19,7 @@ import senka from '../treeImg/senka-cet.svg';
 function Tree() {
   const {treeName} = useParams();
 
-  const drvo = cetinari.find( item => item.name === treeName );
+  const drvo = cetinari.find( item => item.name === treeName ) || liscari.find( item => item.name === treeName ) || zbunovi.find( item => item.name === treeName);
 
   if(!drvo){
     return (<h2 className='text-center'>Nema drveta koje tražite!</h2>);
