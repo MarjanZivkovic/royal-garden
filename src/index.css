@@ -807,6 +807,34 @@ footer ul li a:hover{
 .tree-container .link-btn{
     margin: 0 auto;
 }
+/* SERVICE PAGE */
+.services-page-hero{
+    background: url(./img/usluge-hero.jpg) no-repeat left center / cover;
+}
+.upper{
+    text-transform: uppercase;
+}
+.list-of-services{
+    background: url(./img/busen.jpg) no-repeat left center / cover;
+    background-attachment: fixed;
+    padding-bottom: 6rem;
+}
+.list-of-services ul{
+    padding: 3rem 0;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.list-of-services li{
+    margin: 0.5rem 0;
+}
+.our-team{
+    background-color: #fff;
+    padding-bottom: 6rem;
+}
+.our-team .d-flex{
+    justify-content: center
+}
 
 /* RESPONSIVE */
 @media (min-width: 600px){
@@ -985,6 +1013,10 @@ footer ul li a:hover{
         position: relative;
         top: 0;
     }
+    /* services */
+    .our-team .d-flex > *{
+        flex: 1;
+    }
 }
 @media (min-width: 960px){
     html{
@@ -1051,6 +1083,16 @@ footer ul li a:hover{
     }
     .tree-info-container .svg-icons{
         grid-template-columns: repeat(3, 1fr);
+    }
+    /* services */
+    .list-of-services{
+        max-width: 960px;
+        margin: auto;
+        background-size: 50%;
+        background-position: 30%;
+    }
+    .list-of-services ul{
+        padding: 3rem 8.5rem 3rem 0;
     }
 }
 

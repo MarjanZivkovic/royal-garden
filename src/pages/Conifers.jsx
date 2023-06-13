@@ -11,7 +11,7 @@ import {FaArrowUp, FaArrowDown} from 'react-icons/fa';
 function Conifers() {
   return (
     <>
-      <main className='main flower-page-hero tree-page-hero'>
+      <main className='main tree-page-hero'>
         <div className="wrapper">
           <h1 className="hero-title transformed-down">
               Drveće <span className="d-block">za svako</span> <span className="yellow cursive">Dvorište</span>{" "}
