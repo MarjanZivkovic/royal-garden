@@ -1,50 +1,28 @@
 import React, {useState, useEffect} from "react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
-const testimonials = [
-    {
-        text : 'Prelepo cveće, odlični četinari, vrhunska usluga...',
-        person : 'Zoran, Leskovac'
-    },
-    {
-        text : 'PORODICA ZA PRIMER… A CVEĆE IM JE FANTASTIČNO.',
-        person : 'Slave, Turekovac'
-    },
-    {
-        text: 'Biljke iz rasadnika mi se uvek dobro prime. Uvek nađem ono što mi treba. Sve pohvale!',
-        person: 'Marija, Vlasotince'
-    },
-    {
-        text: 'Cene su pristupačne, a kvalitet cveća na visokom nivou. Prezadovoljna sam!',
-        person: 'Jelena, Leskovac'
-    },
-    {
-        text: 'Impresioniran sam izborom četinara. Drveće je zdravo i izgleda odlično.',
-        person: 'Miloš, Beograd'
-    }
-]
 let activeIndex = 0;
 
-function Testimonials() {
-  const [testimoial, setTestimonial] = useState(testimonials[activeIndex]);  
+function Testimonials({data}) {
+  const [testimoial, setTestimonial] = useState(data[activeIndex]);  
 
   useEffect(() =>{
       function changeTestimonial(){
         activeIndex++;
-        if ( activeIndex > testimonials.length - 1){
+        if ( activeIndex > data.length - 1){
             activeIndex = 0;
         }
-        setTestimonial(testimonials[activeIndex]);
+        setTestimonial(data[activeIndex]);
     }
     setInterval( changeTestimonial, 8000 )
-  }, [])  
+  }, [data])  
 
   return (
     <section className="testimonials">
       <div className="wrapper">
         <h2 className="title transformed-up">
           <span className="black">Reč</span> <br />
-          <span className="cursive">Naših Klijenta</span>
+          <span className="cursive">Naših Kupaca</span>
         </h2>
         <div className="line"></div>
         <div className="testimoials-text">

@@ -835,6 +835,40 @@ footer ul li a:hover{
 .our-team .d-flex{
     justify-content: center
 }
+.technology{
+    background: url(./img/kosac1.jpg) #fff no-repeat left top / cover;
+    padding-bottom: 8rem;
+}
+.technology h2{
+    margin-top: 0;
+    text-align: right;
+}
+.technology p{
+    margin-top: 10rem;
+}
+.tech-copy{
+    text-transform: uppercase;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.yard-types{
+    padding-bottom: 10rem;
+}
+.services-gallery{
+    position: relative;
+    margin-top: 4rem;
+}
+.services-gallery .gallery-showroom{
+    max-width: 400px;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(255, 233, 160, 0.5);
+}
+.services-gallery .dots{
+    left: 2rem;
+    transform: translateX(0)
+}
 
 /* RESPONSIVE */
 @media (min-width: 600px){
@@ -897,6 +931,10 @@ footer ul li a:hover{
     /* about */
     .big-num-container{
         justify-content: center;
+    }
+    /* services */
+    .technology h2{
+        text-align: center;
     }
 }
 @media (min-width: 760px){
@@ -1016,6 +1054,28 @@ footer ul li a:hover{
     /* services */
     .our-team .d-flex > *{
         flex: 1;
+    }
+    .technology p, .tech-copy{
+        width: 50%;
+        margin-left: auto;
+    }
+    .technology p{
+        margin-top: 6rem;
+    }
+    .services-gallery{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .services-gallery > *{
+        flex: 1;
+    }
+    .services-gallery .gallery-showroom{
+    position: sticky;
+    top: 4rem;
+    flex-basis: 400px;
     }
 }
 @media (min-width: 960px){

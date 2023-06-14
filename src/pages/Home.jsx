@@ -7,6 +7,7 @@ import WhyUs from "../components/WhyUs";
 import Testimonials from "../components/Testimonials";
 import Gallery from "../components/Gallery";
 import FindUs from "../components/FindUs";
+import testimonials from "../data/testimonials";
 
 import kaliopa from "../productsImg/kaliopa1.jpg";
 import verbena from "../productsImg/verbena3.jpg";
@@ -134,7 +135,7 @@ function Home() {
           <Link className="link-btn" to="/naše-drveće">vidite sve</Link>
         </div>
       </section>
-      <Testimonials />
+      <Testimonials data={testimonials}/>
       <FindUs />
     </>
   );
