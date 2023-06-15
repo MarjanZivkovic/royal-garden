@@ -14,19 +14,23 @@ import ErrorPage from "./pages/ErrorPage";
 
 document.cookie = 'cookieName=cookieValue; SameSite=None; Secure';
 
+function scrollToTop(){
+  window.scrollTo(0, 0);
+}
+
 
 const router = createBrowserRouter([
   {
     path: '/', 
     element: <Root />,
-    errorElement: <ErrorPage />,
+    errorElement: <ErrorPage onLink={scrollToTop}/>,
     children: [
-      {path: '/', element: <Home />},
+      {path: '/', element: <Home onLink={scrollToTop}/>},
       {path: '/o-nama', element: <About />},
-      {path: '/naše-cveće', element: <Products />},
-      {path: '/naše-cveće/:flowerName', element: <Flower />},
-      {path: '/naše-drveće', element: <Conifers />},
-      {path: '/naše-drveće/:treeName', element: <Tree />},
+      {path: '/naše-cveće', element: <Products onLink={scrollToTop}/>},
+      {path: '/naše-cveće/:flowerName', element: <Flower onLink={scrollToTop}/>},
+      {path: '/naše-drveće', element: <Conifers onLink={scrollToTop}/>},
+      {path: '/naše-drveće/:treeName', element: <Tree onLink={scrollToTop}/>},
       {path: '/naše-usluge', element: <Services />},
     ]
   }

@@ -1,18 +1,16 @@
 import React, { useState } from "react";
-import { NavLink, Link, useNavigate } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import darkLogo from "../img/logo-dark1.jpg";
 import { FaAngleDown, FaPhone, FaTimes, FaEnvelope, FaFacebook, FaViber  } from "react-icons/fa";
 
 function Header() {
   const [opened, setOpened] = useState(false);
-  const navigate = useNavigate();
 
   function openMenu() {
     setOpened((prevState) => !prevState);
   }
-
-  function navigateToPage(path){
-    navigate(path);
+  
+  function scrollToTop(){
     setOpened(false);
     window.scrollTo(0, 0);
   }
@@ -21,14 +19,26 @@ function Header() {
 
   return (
     <nav className={`main-nav ${opened ? "opened" : ""}`}>
-      <div className="wrapper d-flex">
+      <div className="wrapper d-flex big-screen-nav">
         <button className="menu-btn d-flex" onClick={openMenu} title="Meni">
           {opened ? <FaTimes /> : <FaAngleDown />}
         </button>
+        <div className="big-screen-link">
+         <NavLink to="/o-nama" onClick={scrollToTop}>O nama</NavLink>
+        </div>
+        <div className="big-screen-link">
+          <NavLink to="/naše-cveće" onClick={scrollToTop}>Naše cveće</NavLink>
+        </div>
         <div>
-          <Link to="/" title="Početna" onClick={() => {navigateToPage("/")}}>
+          <Link className="logo-home-link" to="/" title="Početna" onClick={scrollToTop}>
             <img src={darkLogo} alt="logo" />
           </Link>
+        </div>
+        <div className="big-screen-link">
+          <NavLink to="/naše-drveće" onClick={scrollToTop}>Naše drveće</NavLink>
+        </div>
+        <div className="big-screen-link">
+          <NavLink to="/naše-usluge" onClick={scrollToTop}>Naše usluge</NavLink>  
         </div>
         <a className="phone-btn d-flex" href="tel:+38169796362">
           <FaPhone /> 
@@ -37,19 +47,19 @@ function Header() {
       <div className="wrapper ul-wrapper">
         <ul className="main-ul text-center">
           <li>
-            <NavLink to="/" onClick={() => {navigateToPage("/")}}>Početna</NavLink>
+            <NavLink to="/" onClick={scrollToTop}>Početna</NavLink>
           </li>
           <li>
-            <NavLink to="/o-nama" onClick={() => {navigateToPage("/o-nama")}}>O nama</NavLink>
+            <NavLink to="/o-nama" onClick={scrollToTop}>O nama</NavLink>
           </li>
           <li>
-            <NavLink to="/naše-cveće" onClick={() => {navigateToPage("/naše-cveće")}}>Naše cveće</NavLink>
+            <NavLink to="/naše-cveće" onClick={scrollToTop}>Naše cveće</NavLink>
           </li>
           <li>
-            <NavLink to="/naše-drveće" onClick={() => {navigateToPage("/naše-drveće")}}>Naše drveće</NavLink>
+            <NavLink to="/naše-drveće" onClick={scrollToTop}>Naše drveće</NavLink>
           </li>
           <li>
-            <NavLink to="/naše-usluge" onClick={() => {navigateToPage("/naše-usluge")}}>Naše usluge</NavLink>
+            <NavLink to="/naše-usluge" onClick={scrollToTop}>Naše usluge</NavLink>
           </li>
         </ul>
         {opened && <ul className="nav-social">

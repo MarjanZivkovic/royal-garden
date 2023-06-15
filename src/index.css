@@ -112,6 +112,18 @@ a, button, input, select{
     height: 100vh;
     overflow-y: auto;
 }
+.big-screen-link{
+    display: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-shadow: -1px -1px 0 var(--primary-black),  1px -1px 0 var(--primary-black), -1px 1px 0 var(--primary-black), 1px 1px 0 var(--primary-black);
+}
+.big-screen-link a.active{
+    color: var(--primary-yellow);
+}
+.big-screen-link:hover{
+    color: var(--primary-yellow);
+}
 .main-ul{
     transform: translateY(-100vh);
     padding: 2rem 0;
@@ -249,6 +261,36 @@ a, button, input, select{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.25rem;
+}
+.products-display a{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s ease;
+}
+.products-display a::after{
+    opacity: 0;
+    content: 'hrizantema';
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    transform: translateX(-50%);
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    padding: 0.1rem 1rem;
+    border-radius: 10px;
+    background-color: rgba(15, 16, 20, 0.5);
+    color: var(--primary-yellow);
+    transition: all 1s ease;
+}
+.products-display .middle-img a::after{
+    content: 'kaliopa';
+}
+.products-display .last-img a::after{
+    content: 'verbena';
+}
+.products-display a:hover::after{
+    opacity: 1;
 }
 .first-img{
     transform: translateY(50%);
@@ -940,6 +982,12 @@ footer ul li a:hover{
 @media (min-width: 760px){
     .wrapper{
         max-width: 960px;
+    }
+    .big-screen-link{
+        display: block;
+    }
+    .logo-home-link img{
+        transform: translateX(1.25rem);
     }
     .about-us .link-btn{
         position: absolute;

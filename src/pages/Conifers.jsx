@@ -8,7 +8,7 @@ import zbunovi from '../data/zbunovi';
 import {FaArrowUp, FaArrowDown} from 'react-icons/fa';
 
 
-function Conifers() {
+function Conifers({onLink}) {
   return (
     <>
       <main className='main tree-page-hero'>
@@ -21,7 +21,7 @@ function Conifers() {
       <section className='products-intro about-us tree-intro'>
         <div className="wrapper">
           <div className='tree-links'>
-            <Link className="link-btn" to="/naše-drveće/#četinari">
+            <Link className="link-btn" to="/naše-drveće/#četinari" >
              Četinari
             </Link>
             <Link className="link-btn" to="/o-nama">
@@ -45,7 +45,7 @@ function Conifers() {
           <ul className='products-display-ul d-flex'>
             {cetinari.map( item =>(
               <li key={item.name} className='text-center'>
-                <Link to={`/naše-drveće/${item.name}`}>
+                <Link to={`/naše-drveće/${item.name}`} onClick={onLink}>
                   <img src={item.img[0]} alt={item.name} />
                   <span>{item.name}</span>
                 </Link>
@@ -67,7 +67,7 @@ function Conifers() {
           <ul className='products-display-ul d-flex'>
             {liscari.map( item =>(
               <li key={item.name} className='text-center'>
-                <Link to={`/naše-drveće/${item.name}`}>
+                <Link to={`/naše-drveće/${item.name}`} onClick={onLink}>
                   <img src={item.img[0]} alt={item.name} />
                   <span>{item.name}</span>
                 </Link>
@@ -89,7 +89,7 @@ function Conifers() {
           <ul className='products-display-ul d-flex'>
             {zbunovi.map( item =>(
               <li key={item.name} className='text-center'>
-                <Link to={`/naše-drveće/${item.name}`}>
+                <Link to={`/naše-drveće/${item.name}`} onClick={onLink}>
                   <img src={item.img[0]} alt={item.name} />
                   <span>{item.name}</span>
                 </Link>

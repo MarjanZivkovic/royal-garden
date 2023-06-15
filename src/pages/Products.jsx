@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import cvece from '../data/cvece';
 import {FaArrowUp, FaArrowDown} from 'react-icons/fa';
 
-function Products() {
+function Products({onLink}) {
   return (
     <>
       <main className='main flower-page-hero'>
@@ -25,7 +25,7 @@ function Products() {
           <ul className='products-display-ul d-flex'>
             {cvece.map( item =>(
               <li key={item.name} className='text-center'>
-                <Link to={`/naše-cveće/${item.name}`}>
+                <Link to={`/naše-cveće/${item.name}`} onClick={onLink}>
                   <img src={item.img[0]} alt={item.name} />
                   <span>{item.name}</span>
                 </Link>

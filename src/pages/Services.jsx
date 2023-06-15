@@ -1,9 +1,7 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 
 import Gallery from '../components/Gallery';
-import Testimonials from "../components/Testimonials";
-import testimonials from "../data/testimonials";
+import ServiceTestimonials from "../components/ServiceTestimonials";
 import worker from '../img/radnik.jpg';
 import radovi1 from '../servicesImg/radovi1.jpg';
 import radovi2 from '../servicesImg/radovi2.jpg';
@@ -120,7 +118,7 @@ function Services() {
           </div>
         </div>
       </section>
-      <Testimonials data={testimonials}/>
+      <ServiceTestimonials />
     </>
   )
 }

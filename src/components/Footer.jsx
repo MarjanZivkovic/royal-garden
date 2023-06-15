@@ -5,26 +5,30 @@ import logo from '../img/logo.jpg';
 
 const year = new Date().getFullYear();
 
+function scrollToTop(){
+    window.scrollTo(0, 0);
+}
+
 function Footer() {
   return (
     <footer className="black">
         <div className="wrapper text-center">
-            <Link to="/"><img src={logo} alt="logo" /></Link>
+            <Link to="/"><img src={logo} alt="logo" onClick={scrollToTop}/></Link>
             <ul>
                 <li>
-                    <Link to="/" className='gray'>Početna</Link>
+                    <Link to="/" className='gray' onClick={scrollToTop}>Početna</Link>
                 </li>
                 <li>
-                    <Link to="/o-nama" className='gray'>O nama</Link>
+                    <Link to="/o-nama" className='gray' onClick={scrollToTop}>O nama</Link>
                 </li>
                 <li>
-                    <Link to="/naše-cveće" className='gray'>Naše cveće</Link>
+                    <Link to="/naše-cveće" className='gray' onClick={scrollToTop}>Naše cveće</Link>
                 </li>
                 <li>
-                    <Link to="/naše-drveće" className='gray'>Naše drveće</Link>
+                    <Link to="/naše-drveće" className='gray' onClick={scrollToTop}>Naše drveće</Link>
                 </li>
                 <li>
-                    <Link to="/naše-usluge" className='gray'>Naše usluge</Link>
+                    <Link to="/naše-usluge" className='gray' onClick={scrollToTop}>Naše usluge</Link>
                 </li>
             </ul>
             <p className='footer-copy'>

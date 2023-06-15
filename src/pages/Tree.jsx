@@ -16,7 +16,7 @@ import sunce from '../treeImg/sunce-cet.svg';
 import senka from '../treeImg/senka-cet.svg';
 
 
-function Tree() {
+function Tree({onLink}) {
   const {treeName} = useParams();
 
   const drvo = cetinari.find( item => item.name === treeName ) || liscari.find( item => item.name === treeName ) || zbunovi.find( item => item.name === treeName);
@@ -79,7 +79,7 @@ function Tree() {
             </div>
           </div>
           <div className='text-center black-go-back'>
-            <Link className="link-btn d-flex" to="/naše-drveće">
+            <Link className="link-btn d-flex" to="/naše-drveće" onClick={onLink}>
               <FaArrowLeft /> <span>Nazad</span> 
             </Link>
           </div>

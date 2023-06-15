@@ -77,9 +77,6 @@ function About() {
             </div>
             <NumCounter target={70} duration={1500}/>
           </div>
-          {/* <h2 className="title transformed-up">
-            Naš <span className="d-block">Tim</span>
-          </h2> */}
         </div>
       </section>
       <section className='sales testimonials'>
@@ -95,7 +92,7 @@ function About() {
           </ul>
           <div className='total-sale d-flex'>
             <span>Više od</span>
-            <NumCounter target={12000000} duration={3000}/>
+            <NumCounter target={12000000} duration={2000}/>
             <span>prodatih sadnica</span>
           </div>
         </div>

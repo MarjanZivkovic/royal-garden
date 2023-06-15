@@ -15,7 +15,7 @@ const months = [
   'JUL', 'AVG', 'SEP', 'OKT', 'NOV', 'DEC'
 ];
 
-function Flower() {
+function Flower({onLink}) {
   const {flowerName} = useParams();
 
   const cvet = cvece.find( item => item.name === flowerName );
@@ -82,7 +82,7 @@ function Flower() {
             </div>
           </div>
           <div className='text-center'>
-            <Link className="link-btn d-flex" to="/naše-cveće">
+            <Link className="link-btn d-flex" to="/naše-cveće" onClick={onLink}>
               <FaArrowLeft /> <span>Nazad</span> 
             </Link>
           </div>
