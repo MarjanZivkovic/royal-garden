@@ -24,7 +24,7 @@ function Gallery({images, width}) {
   function handleTouchEnd(event) {
     const touchEndX = event.changedTouches[0].clientX;
     const touchDistance = touchEndX - touchStartX;
-    const minSwipeDistance = width / 4;  //adjust this number to set how long swipe is
+    const minSwipeDistance = width / 5;  //adjust this number to set how long swipe is
 
     if (touchDistance > minSwipeDistance) {
       prevSlide();

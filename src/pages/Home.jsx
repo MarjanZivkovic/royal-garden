@@ -128,10 +128,10 @@ function Home({onLink}) {
       <section className="black home-conifer-container">
         <div className="wrapper home-conifers text-center">
           <h2 className="title transformed-up">
-              <span>Naši</span> <br />{" "}
-              <span className="cursive yellow">Četinari</span>
+              <span>Četinari</span> <br />{" "}
+              <span className="cursive yellow">I Lišćari</span>
           </h2>
-          <p>Dodajte zelenilo u Vaš svet tokom cele godine. <br /> Pogledajte našu ponudu četinara.</p>
+          <p>Dodajte zelenilo u Vaš svet tokom cele godine. <br /> Pogledajte našu ponudu četinara, lišćara i ukrasnog žbunja.</p>
           <Link className="link-btn" to="/naše-drveće" onClick={onLink}>vidite sve</Link>
         </div>
       </section>

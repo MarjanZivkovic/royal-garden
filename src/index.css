@@ -860,7 +860,6 @@ footer ul li a:hover{
 .deciduous-pic{
     background: url(./img/listopadno.jpg) no-repeat center top / cover;
     min-height: 60vh;
-    border-radius: 1rem 1rem 0 0;
 }
 .bushes-pic{
     background: url(./img/zbunje1.jpg) no-repeat center bottom / cover;
@@ -1235,6 +1234,11 @@ footer ul li a:hover{
         grid-template-columns: repeat(4, 1fr);
     }
     /* trees */
+    .deciduous-pic{
+        max-width: 960px;
+        margin: auto;
+        border-radius: 1rem 1rem 0 0;
+    }
     .tree-wrapper{
         box-shadow: 0 0 10px 5px rgba(15, 16, 20, 0.5);
     }

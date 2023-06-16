@@ -70,7 +70,7 @@ function Conifers({onLink}) {
         </div>
       </section>
       <section className='deciduous-pic-container' id='lišćari'>
-        <div className="wrapper deciduous-pic">&nbsp;</div>
+        <div className="deciduous-pic">&nbsp;</div>
       </section>
       <section className='deciduous-container'>
         <div className="wrapper">
@@ -92,7 +92,7 @@ function Conifers({onLink}) {
         </div>
       </section>
       <section className='deciduous-pic-container' id='ukrasno-žbunje'>
-        <div className="wrapper deciduous-pic bushes-pic">&nbsp;</div>
+        <div className="deciduous-pic bushes-pic">&nbsp;</div>
       </section>
       <section className='conifers-container'>
         <div className="wrapper">
