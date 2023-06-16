@@ -2,6 +2,7 @@ import React from 'react';
 import { FaCheckCircle } from "react-icons/fa";
 import NumCounter from '../components/NumCounter';
 import FindUs from '../components/FindUs';
+import Partners from '../components/Partners';
 
 import nenad from '../img/nenad.jpg';
 
@@ -69,9 +70,9 @@ function About() {
           <p className='black'>Misija <strong>Royal Garden Milenković</strong> je da kreira životno okruženje koje usrećuje i inspiriše. Kroz našu posvećenost izvrsnosti, kvalitetne biljke i obraćanje pažnje na svaki detalj, stvaramo personalizovana i održiva rešenja koja unapređuju Vaš život.</p>
         </div>
       </section>
-      <section className='our-team testimonials'>
+      <section className='testimonials'>
         <div className="wrapper">
-          <div className="big-num-container smaller-nums d-flex transformed-up">
+          <div className="big-num-container d-flex transformed-up">
             <div className='black'>
               Više od<span className='d-block yellow'>vrsta cveća</span> 
             </div>
@@ -97,6 +98,7 @@ function About() {
           </div>
         </div>
       </section>
+      <Partners  />
       <FindUs />
     </>
   )

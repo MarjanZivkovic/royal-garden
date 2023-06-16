@@ -2,6 +2,8 @@ import React from 'react';
 
 import Gallery from '../components/Gallery';
 import ServiceTestimonials from "../components/ServiceTestimonials";
+import Partners from '../components/Partners';
+
 import worker from '../img/radnik.jpg';
 import radovi1 from '../servicesImg/radovi1.jpg';
 import radovi2 from '../servicesImg/radovi2.jpg';
@@ -15,6 +17,8 @@ import radovi9 from '../servicesImg/radovi9.jpg';
 import radovi10 from '../servicesImg/radovi10.jpg';
 
 const radoviArr = [radovi1, radovi2, radovi3, radovi4, radovi5, radovi6, radovi7, radovi8, radovi9, radovi10]
+
+document.cookie = 'cookieName=cookieValue; SameSite=None; Secure';
 
 function Services() {
   return (
@@ -119,6 +123,7 @@ function Services() {
         </div>
       </section>
       <ServiceTestimonials />
+      <Partners />
     </>
   )
 }

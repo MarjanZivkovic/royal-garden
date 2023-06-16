@@ -78,7 +78,7 @@ a, button, input, select{
 .black{
     color: var(--primary-black);
 }
-.black::selection{
+.black::selection, .gray::selection{
     background-color: var(--primary-black);
     color: var(--primary-yellow);
 }
@@ -256,6 +256,10 @@ a, button, input, select{
 }
 .our-products .transformed-down{
     transform: translateY(20%);
+}
+.our-products h2{
+    position: relative;
+    z-index: 2;
 }
 .products-display{
     display: grid;
@@ -481,6 +485,24 @@ a, button, input, select{
     font-style: italic;
     margin: 1rem 0.5rem;
 }
+/* partners */
+.partners{
+    padding-bottom: 10rem;
+}
+.partner-imgs{
+    justify-content: center;
+    gap: 2rem;
+}
+.partner-imgs a{
+    filter: brightness(0.3);
+    transition: all 0.6s ease;
+}
+.partner-imgs a:hover{
+    filter: brightness(1);
+}
+.partner-imgs a:nth-of-type(3) img{
+    border-radius: 50%;
+}
 /* map */
 .map .location{
     padding: 1rem 0 5rem;
@@ -570,7 +592,7 @@ footer ul li a:hover{
 .go-to-top svg:hover{
     color: var(--primary-yellow);
 }
-/* error page */
+/* Error page */
 .error-container a{
     display: block;
     text-decoration: underline;
@@ -689,8 +711,25 @@ footer ul li a:hover{
     font-size: 0.9rem;
     font-weight: 200;
 }
+.num-counter-on-products{
+    padding: 4rem 0;
+}
+.search-input{
+    display: block;
+    margin: 2rem auto 0;
+    padding: 0.5rem 2rem;
+    border: 0;
+    border-bottom: 1px solid var(--primary-yellow);
+    font-size: 0.9rem;
+    background-color: transparent;
+}
+.search-input:focus{
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 233, 160, 0.5);
+    border-bottom: 1px solid transparent;
+}
 .products-display-ul{
-    padding: 2rem 0 4rem;
+    padding: 2rem 0 6rem;
     justify-content: center;
     align-items: flex-start;
     gap: 2rem 1rem;
@@ -720,6 +759,9 @@ footer ul li a:hover{
 }
 .products-display-ul li a:hover span{
     font-weight: 700;
+}
+.not-found{
+    padding: 2rem 0 6rem;
 }
 .ask-for-more{
     padding: 0 0 5rem;
@@ -789,11 +831,18 @@ footer ul li a:hover{
     background: url(./img/drvece-hero.jpg) no-repeat center center / cover;
 }
 .tree-intro{
-    padding-bottom: 6rem;
+    padding-bottom: 10rem;
+}
+.tree-links .link-btn{
+    cursor: pointer;
 }
 .about-us.tree-intro .link-btn{
     padding: 0.5rem 1rem;
     margin: 0 0.25rem;
+}
+.num-counter-on-conifers{
+    padding-bottom: 4rem;
+    background-color: #fff;
 }
 .conifers-container{
     background-color: #fff;

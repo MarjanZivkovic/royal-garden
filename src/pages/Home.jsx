@@ -7,6 +7,7 @@ import WhyUs from "../components/WhyUs";
 import Testimonials from "../components/Testimonials";
 import Gallery from "../components/Gallery";
 import FindUs from "../components/FindUs";
+import Partners from "../components/Partners";
 
 import kaliopa from "../productsImg/kaliopa1.jpg";
 import verbena from "../productsImg/verbena3.jpg";
@@ -135,6 +136,7 @@ function Home({onLink}) {
         </div>
       </section>
       <Testimonials />
+      <Partners />
       <FindUs />
     </>
   );

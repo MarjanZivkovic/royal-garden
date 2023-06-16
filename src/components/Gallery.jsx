@@ -1,35 +1,75 @@
 import React, {useState, useEffect} from 'react';
 // import {FaArrowRight, FaArrowLeft} from 'react-icons/fa';
-// import video from '../img/cvece.mp4'
 
 function Gallery({images, width}) {
   const [ slide, setSlide ] = useState(0);
   const [ autoSlide, setAutoSlide ] = useState(true);
+  const [touchStartX, setTouchStartX] = useState(0);
   
-  // function prevSlide(){
-  //   setSlide((prevState) => ( prevState === 0 ? images.length - 1 : prevState - 1 ))
-  // }
+  // functions to trigger previous and next slide
+  function prevSlide(){
+    setSlide((prevState) => ( prevState === 0 ? images.length - 1 : prevState - 1 ))
+  }
 
   function nextSlide(){
     setSlide((prevState) => ( prevState === images.length - 1 ? 0 : prevState + 1  ))
   }
 
+  // functions for handling swipping on mobile screens
+  function handleTouchStart(event) {
+    setTouchStartX(event.touches[0].clientX);
+    setAutoSlide(false);
+  }
+
+  function handleTouchEnd(event) {
+    const touchEndX = event.changedTouches[0].clientX;
+    const touchDistance = touchEndX - touchStartX;
+    const minSwipeDistance = width / 4;  //adjust this number to set how long swipe is
+
+    if (touchDistance > minSwipeDistance) {
+      prevSlide();
+    } else if (touchDistance < -minSwipeDistance) {
+      nextSlide();
+    }
+
+    setAutoSlide(true);
+  }
+
+  // keybord sliders function
+  function handleKeyDown(event) {
+    if (event.key === 'ArrowLeft') {
+      prevSlide();
+    } else if (event.key === 'ArrowRight') {
+      nextSlide();
+    }
+  }
+
+  // auto sliding effect
   useEffect(() =>{
     if(!autoSlide) return;
+
     const slideInterval = setInterval( nextSlide, 5000 );
     return () => clearInterval(slideInterval);
     // eslint-disable-next-line 
   }, [autoSlide]);
 
+  // keybord listener
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+    // eslint-disable-next-line
+  }, []);
+
   return (
     <div className="gallery-showroom">
-        <div className="gallery-imgs d-flex">
+        <div className="gallery-imgs d-flex" onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}>
             {images.map((img, i) => (
                 <img key={i} src={img} alt={img} className='gallery-img' style={{transform: `translateX(-${slide * width}px)`}} onMouseEnter={() => setAutoSlide(false)} onMouseLeave={() => setAutoSlide(true)}/>
             ))}
-            {/* {[ images.map(img => (
-                <img src={img} alt={img} className='gallery-img' style={{transform: `translateX(-${slide * 390}px)`}} onMouseEnter={() => setAutoSlide(false)} onMouseLeave={() => setAutoSlide(true)}/>
-            )), <video src={video} autoPlay loop muted/> ]} */}
+            {/* { video && <video src={video} className={`gallery-img video-slide ${images.length === 0 ? 'active-slide' : ''}`} style={{ transform: `translateX(-${slide * width}px)` }} autoPlay loop muted></video> } */}
             <div className="dots d-flex">
               {images.map((_, i) =>(
                 <div key={i} className={`dot ${ i ===  slide ? 'active-slide' : '' }`} onClick={() => setSlide(i)}>
