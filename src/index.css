@@ -205,6 +205,40 @@ a, button, input, select{
     font-size: 0.75rem;
     padding-top: 2rem;
 }
+/* starting animation */
+@keyframes start {
+    0% {
+        transform: translateY(0);
+    }
+    65%{
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-200vh);
+    }
+}
+.start-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--primary-black);
+    z-index: 10;
+    animation: start 3s ease-in-out forwards;
+}
+@keyframes skeleton {
+    0% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.start-container img{
+    animation: skeleton 1s linear infinite alternate;
+}
 /* hero */
 .main{
     min-height: 70vh;
@@ -213,6 +247,17 @@ a, button, input, select{
 .hero{
     background: url(./img/hero-mobile.jpg) no-repeat center center / cover;
 }
+@keyframes titleAnimation{
+    0% {
+       transform: translate(-150vw, 50%);
+    }
+    50%{
+       transform: translate(-150vw, 50%);
+    }
+    100% {
+        transform: translate(0, 50%);
+    }
+}
 .hero-title{
     position: absolute;
     bottom: 0;
@@ -220,6 +265,7 @@ a, button, input, select{
     font-size: 3rem;
     font-weight: 500;
     text-shadow: 0 0 5px var(--primary-black);
+    animation: titleAnimation 2.75s 0.4s ease-out forwards;
 }
 /* about */
 .about-us{
@@ -319,6 +365,7 @@ a, button, input, select{
 }
 .our-work ul{
     padding: 0 0 8rem;
+    text-align: right;
 }
 .our-work ul li{
     padding: 1rem 0;
@@ -384,6 +431,7 @@ a, button, input, select{
 }
 .gallery-showroom{
     overflow: hidden;
+    position: relative;
 }
 .gallery-imgs{
     position: relative;
@@ -396,12 +444,10 @@ a, button, input, select{
 .dots{
     position: absolute;
     bottom: 2rem;
-    left: 36%;
-    transform: translateX(-50%);
-    width: max-content;
-    justify-content: center;
+    width: 100%;
+    justify-content: center;  
     gap: 0.9rem;
-    z-index: 2;
+    z-index: 2; 
 }
 .dot{
     width: 0.65rem;
@@ -785,9 +831,6 @@ footer ul li a:hover{
     margin: 0 auto;
     overflow: hidden;
 }
-.flower-wrapper .gallery-showroom .dots{
-    left: 200px;
-}
 .flower-info-container{
     max-width: 400px;
     margin: auto;
@@ -897,7 +940,7 @@ footer ul li a:hover{
 .tree-container .link-btn{
     margin: 0 auto;
 }
-/* SERVICE PAGE */
+/* SERVICES PAGE */
 .services-page-hero{
     background: url(./img/usluge-hero.jpg) no-repeat left center / cover;
 }
@@ -927,6 +970,7 @@ footer ul li a:hover{
 }
 .technology{
     background: url(./img/kosac1.jpg) #fff no-repeat left top / cover;
+    background-position: 5%;
     padding-bottom: 8rem;
 }
 .technology h2{
@@ -950,14 +994,12 @@ footer ul li a:hover{
     margin-top: 4rem;
 }
 .services-gallery .gallery-showroom{
+    position: relative;
     max-width: 400px;
     margin: 2rem auto;
+    padding: 0;
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(255, 233, 160, 0.5);
-}
-.services-gallery .dots{
-    left: 2rem;
-    transform: translateX(0)
 }
 
 /* RESPONSIVE */
@@ -1009,9 +1051,6 @@ footer ul li a:hover{
     .gallery-showroom{
         padding: 1.5rem 0;
     }
-    .dots{
-        left: 50%;
-    }
     .parks-copy{
         max-width: 460px;
     }
@@ -1055,6 +1094,7 @@ footer ul li a:hover{
         margin: auto;
     }
     .our-work ul li{
+        justify-content: center;
         gap: 1rem;
     }
     .best-kaliopa, .crown-div{
@@ -1094,7 +1134,7 @@ footer ul li a:hover{
     }
     .gallery-showroom{
         flex-basis: 560px;
-        padding: 0 1.5rem 2rem 0;
+        padding: 0 ;
     }
     .parks-copy{
         text-align: left;
@@ -1151,6 +1191,9 @@ footer ul li a:hover{
     .our-team .d-flex > *{
         flex: 1;
     }
+    .technology{
+          background-position: left top ;  
+    }
     .technology p, .tech-copy{
         width: 50%;
         margin-left: auto;
@@ -1169,9 +1212,9 @@ footer ul li a:hover{
         flex: 1;
     }
     .services-gallery .gallery-showroom{
-    position: sticky;
-    top: 4rem;
-    flex-basis: 400px;
+        position: sticky;
+        top: 4rem;
+        flex-basis: 400px;
     }
 }
 @media (min-width: 960px){

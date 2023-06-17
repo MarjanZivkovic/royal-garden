@@ -1,5 +1,7 @@
 import React from 'react';
 import { FaCheckCircle } from "react-icons/fa";
+
+import Start from "../components/Start";
 import NumCounter from '../components/NumCounter';
 import FindUs from '../components/FindUs';
 import Partners from '../components/Partners';
@@ -12,6 +14,7 @@ document.cookie = 'cookieName=cookieValue; SameSite=None; Secure';
 function About() {
   return (
     <>
+      <Start />
       <main className="main about-page-hero">
         <div className="wrapper">
           <h1 className="hero-title transformed-down">

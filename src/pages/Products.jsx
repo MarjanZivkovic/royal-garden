@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 
 import cvece from '../data/cvece';
+import Start from "../components/Start";
 import NumCounter from '../components/NumCounter';
 
 import {FaArrowDown} from 'react-icons/fa';
@@ -26,6 +27,7 @@ function Products({onLink}) {
 
   return (
     <>
+      <Start />
       <main className='main flower-page-hero'>
         <div className="wrapper">
           <h1 className="hero-title transformed-down">

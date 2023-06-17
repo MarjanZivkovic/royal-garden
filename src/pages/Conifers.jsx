@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import cetinari from '../data/cetinari';
 import liscari from '../data/liscari';
 import zbunovi from '../data/zbunovi';
+import Start from "../components/Start";
 import NumCounter from '../components/NumCounter';
 
 import {FaArrowUp, FaArrowDown} from 'react-icons/fa';
@@ -16,6 +17,7 @@ function Conifers({onLink}) {
 
   return (
     <>
+      <Start />
       <main className='main tree-page-hero'>
         <div className="wrapper">
           <h1 className="hero-title transformed-down">

@@ -70,12 +70,12 @@ function Gallery({images, width}) {
                 <img key={i} src={img} alt={img} className='gallery-img' style={{transform: `translateX(-${slide * width}px)`}} onMouseEnter={() => setAutoSlide(false)} onMouseLeave={() => setAutoSlide(true)}/>
             ))}
             {/* { video && <video src={video} className={`gallery-img video-slide ${images.length === 0 ? 'active-slide' : ''}`} style={{ transform: `translateX(-${slide * width}px)` }} autoPlay loop muted></video> } */}
-            <div className="dots d-flex">
-              {images.map((_, i) =>(
-                <div key={i} className={`dot ${ i ===  slide ? 'active-slide' : '' }`} onClick={() => setSlide(i)}>
-                </div>
-              ))}
+        </div>
+        <div className="dots d-flex">
+          {images.map((_, i) =>(
+            <div key={i} className={`dot ${ i ===  slide ? 'active-slide' : '' }`} onClick={() => setSlide(i)}>
             </div>
+          ))}
         </div>
         {/* <div className="gallery-btns d-flex">
             <div onClick={prevSlide}><FaArrowLeft /></div>

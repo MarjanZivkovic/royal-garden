@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Start from "../components/Start";
 import Gallery from '../components/Gallery';
 import ServiceTestimonials from "../components/ServiceTestimonials";
 import Partners from '../components/Partners';
@@ -23,6 +24,7 @@ document.cookie = 'cookieName=cookieValue; SameSite=None; Secure';
 function Services() {
   return (
     <>
+      <Start />
       <main className='main services-page-hero'>
         <div className="wrapper">
           <h1 className="hero-title transformed-down">

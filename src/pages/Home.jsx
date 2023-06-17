@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import { FaCheckCircle } from "react-icons/fa";
 
+import Start from "../components/Start";
 import WhyUs from "../components/WhyUs";
 import Testimonials from "../components/Testimonials";
 import Gallery from "../components/Gallery";
@@ -26,6 +27,7 @@ document.cookie = 'cookieName=cookieValue; SameSite=None; Secure';
 function Home({onLink}) {
   return (
     <>
+      <Start />
       <main className="main hero">
         <div className="wrapper">
           <h1 className="hero-title transformed-down">
