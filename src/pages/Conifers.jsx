@@ -46,7 +46,7 @@ function Conifers({onLink}) {
         <div className="wrapper">
           <div className="big-num-container d-flex transformed-up">
             <div>
-              Više od<span className='d-block black'>vrsti drveća</span> 
+              Više od<span className='d-block black'>vrsta drveća</span> 
             </div>
             <NumCounter target={50} duration={1500}/>
           </div>

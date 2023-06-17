@@ -38,7 +38,7 @@ function Footer() {
                 <FaArrowCircleUp />
             </div>
         </div>
-        <p className="grass text-center"><small>Design by: Marjan</small></p>
+        <p className="grass text-center"><small>Created by:</small> <a href="https://marjan-zivkovic.com/" target='_blank' rel="noreferrer">Marjan</a></p>
     </footer>
   )
 }
