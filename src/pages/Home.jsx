@@ -5,6 +5,7 @@ import { FaCheckCircle } from "react-icons/fa";
 
 import Start from "../components/Start";
 import WhyUs from "../components/WhyUs";
+import Hero from "../components/Hero";
 import Testimonials from "../components/Testimonials";
 import Gallery from "../components/Gallery";
 import FindUs from "../components/FindUs";
@@ -14,13 +15,16 @@ import kaliopa from "../productsImg/kaliopa1.jpg";
 import verbena from "../productsImg/verbena3.jpg";
 import hrizantema from "../productsImg/hrizantema3.jpg";
 
-import stadion from "../img/stadion.jpg";
-import jezero from "../img/jezero.jpg";
-import park from "../img/park.jpg";
-import malch from "../img/malch.jpg";
-import kuce from "../img/kuce.jpg";
+import gallery1 from "../img/gallery1.jpg"
+import gallery2 from "../img/gallery2.jpg"
+import gallery3 from "../img/gallery3.jpg"
+import gallery4 from "../img/gallery4.jpg"
+import gallery5 from "../img/gallery5.jpg"
+import gallery6 from "../img/gallery6.jpg"
+import gallery7 from "../img/gallery7.jpg"
+import gallery8 from "../img/gallery8.jpg"
 
-const images = [stadion, jezero, park, malch, kuce];
+const images = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7, gallery8];
 
 document.cookie = 'cookieName=cookieValue; SameSite=None; Secure';
 
@@ -28,14 +32,15 @@ function Home({onLink}) {
   return (
     <>
       <Start />
-      <main className="main hero">
+      <Hero />
+      {/* <main className="main hero">
         <div className="wrapper">
           <h1 className="hero-title transformed-down">
             Royal <span className="d-block">Garden</span>{" "}
-            <span className="yellow cursive">Milenković</span>
+            <span className="yellow">Milenković</span>
           </h1>
         </div>
-      </main>
+      </main> */}
       <section className="about-us">
         <div className="wrapper">
           <Link className="link-btn" to="/o-nama" onClick={onLink}>
@@ -54,26 +59,6 @@ function Home({onLink}) {
             potrebno da Vaša ideja zaživi.
           </p>
         </div>
-      </section>
-      <section className="our-products">
-        <h2 className="title transformed-down">
-          Naše <br /> <span className="yellow">Cveće</span>
-        </h2>
-        <div className="products-display">
-          <div className="first-img">
-            <Link to='/naše-cveće/hrizantema' onClick={onLink}><img src={hrizantema} alt="hrizantema"/></Link>
-          </div>
-          <div className="middle-img">
-            <Link to='/naše-cveće/kaliopa' onClick={onLink}><img src={kaliopa} alt="kaliopa"/></Link>
-          </div>
-          <div className="fake-img">&nbsp;</div>
-          <div className="last-img">
-            <Link to='/naše-cveće/verbena' onClick={onLink}><img src={verbena} alt="verbena" /></Link>
-          </div>
-        </div>
-        <Link className="link-btn" to="/naše-cveće" onClick={onLink}>
-          Vidite sve
-        </Link>
       </section>
       <section className="our-work">
         <div className="wrapper">
@@ -102,13 +87,12 @@ function Home({onLink}) {
             <li>
               <FaCheckCircle /> Ukrasnog žbunja
             </li>
-            <li>
+            {/* <li>
               <FaCheckCircle /> Začinskog bilja
-            </li>
+            </li> */}
           </ul>
         </div>
       </section>
-      <WhyUs />
       <section className="gallery black">
         <div className="wrapper">
           <h2 className="title">
@@ -125,9 +109,34 @@ function Home({onLink}) {
             </div>
           </div>
           <h3 className="cursive text-center gray">Vaša vizija + naša stručnost = dvorište iz snova</h3>
+          <div className="caricin-grad">
+            <h2>Novi projekti</h2>
+            <iframe width="560" height="500" src="https://www.youtube-nocookie.com/embed/0Y6y8WwQJW4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+          </div>
         </div>
       </section>
-      <section className="black home-conifer-container">
+      <WhyUs />
+      <section className="our-products">
+        <h2 className="title transformed-down">
+          Naše <br /> <span className="yellow">Cveće</span>
+        </h2>
+        <div className="products-display">
+          <div className="first-img">
+            <Link to='/naše-cveće/hrizantema' onClick={onLink}><img src={hrizantema} alt="hrizantema"/></Link>
+          </div>
+          <div className="middle-img">
+            <Link to='/naše-cveće/kaliopa' onClick={onLink}><img src={kaliopa} alt="kaliopa"/></Link>
+          </div>
+          <div className="fake-img">&nbsp;</div>
+          <div className="last-img">
+            <Link to='/naše-cveće/verbena' onClick={onLink}><img src={verbena} alt="verbena" /></Link>
+          </div>
+        </div>
+        <Link className="link-btn" to="/naše-cveće" onClick={onLink}>
+          Vidite sve
+        </Link>
+      </section>   
+      {/* <section className="black home-conifer-container">
         <div className="wrapper home-conifers text-center">
           <h2 className="title transformed-up">
               <span>Četinari</span> <br />{" "}
@@ -136,7 +145,7 @@ function Home({onLink}) {
           <p>Dodajte zelenilo u Vaš svet tokom cele godine. <br /> Pogledajte našu ponudu četinara, lišćara i ukrasnog žbunja.</p>
           <Link className="link-btn" to="/naše-drveće" onClick={onLink}>vidite sve</Link>
         </div>
-      </section>
+      </section> */}
       <Testimonials />
       <Partners />
       <FindUs />

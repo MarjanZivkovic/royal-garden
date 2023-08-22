@@ -27,7 +27,7 @@ function Header() {
          <NavLink to="/o-nama" onClick={scrollToTop}>O nama</NavLink>
         </div>
         <div className="big-screen-link">
-          <NavLink to="/naše-cveće" onClick={scrollToTop}>Naše cveće</NavLink>
+          <NavLink to="/naše-usluge" onClick={scrollToTop}>Naše usluge</NavLink>  
         </div>
         <div>
           <Link className="logo-home-link" to="/" title="Početna" onClick={scrollToTop}>
@@ -38,7 +38,7 @@ function Header() {
           <NavLink to="/naše-drveće" onClick={scrollToTop}>Naše drveće</NavLink>
         </div>
         <div className="big-screen-link">
-          <NavLink to="/naše-usluge" onClick={scrollToTop}>Naše usluge</NavLink>  
+          <NavLink to="/naše-cveće" onClick={scrollToTop}>Naše cveće</NavLink>
         </div>
         <a className="phone-btn d-flex" href="tel:+38169796362">
           <FaPhone /> 
@@ -53,13 +53,13 @@ function Header() {
             <NavLink to="/o-nama" onClick={scrollToTop}>O nama</NavLink>
           </li>
           <li>
-            <NavLink to="/naše-cveće" onClick={scrollToTop}>Naše cveće</NavLink>
+            <NavLink to="/naše-usluge" onClick={scrollToTop}>Naše usluge</NavLink>
           </li>
           <li>
             <NavLink to="/naše-drveće" onClick={scrollToTop}>Naše drveće</NavLink>
           </li>
           <li>
-            <NavLink to="/naše-usluge" onClick={scrollToTop}>Naše usluge</NavLink>
+            <NavLink to="/naše-cveće" onClick={scrollToTop}>Naše cveće</NavLink>
           </li>
         </ul>
         {opened && <ul className="nav-social">

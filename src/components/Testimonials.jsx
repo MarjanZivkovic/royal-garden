@@ -45,7 +45,7 @@ function Testimonials() {
     <section className="testimonials">
       <div className="wrapper">
         <h2 className="title transformed-up">
-          <span className="black">Reč</span> <br />
+          <span className="yellow">Reč</span> <br />
           <span className="cursive">Naših Kupaca</span>
         </h2>
         <div className="line"></div>

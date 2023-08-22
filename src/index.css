@@ -241,11 +241,23 @@ a, button, input, select{
 }
 /* hero */
 .main{
-    min-height: 70vh;
+    min-height: 75vh;
     position: relative;
 }
 .hero{
-    background: url(./img/hero-mobile.jpg) no-repeat center center / cover;
+    transition: all ease-in-out 3s;
+}
+.hero1{
+    background: url(./img/home1.jpg) no-repeat center center / cover;
+}    
+.hero2{
+    background: url(./img/home2.jpg) no-repeat center center / cover;
+}
+.hero3{
+    background: url(./img/home3.jpg) no-repeat center center / cover;
+}
+.hero4{
+    background: url(./img/home4.jpg) no-repeat center center / cover;
 }
 @keyframes titleAnimation{
     0% {
@@ -298,7 +310,8 @@ a, button, input, select{
 /* our-products */
 .our-products{
     position: relative;
-    padding: 2rem 0;
+    padding: 0 0 8rem;
+    margin-top: 6rem;
 }
 .our-products .transformed-down{
     transform: translateY(20%);
@@ -349,7 +362,7 @@ a, button, input, select{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 75%);
+    transform: translate(-50%, -125%);
     background-color: var(--primary-black);
     color: var(--primary-yellow);
     z-index: 2;
@@ -364,7 +377,7 @@ a, button, input, select{
     background-attachment: fixed;
 }
 .our-work ul{
-    padding: 0 0 8rem;
+    padding: 0 0 3rem;
     text-align: right;
 }
 .our-work ul li{
@@ -417,7 +430,7 @@ a, button, input, select{
 }
 /* gallery */
 .gallery{
-    padding: 6rem 0 8rem;
+    padding: 3rem 0 8rem;
     background-color: #fff;
 }
 .gallery .wrapper{
@@ -477,8 +490,16 @@ a, button, input, select{
 .gallery h3{
     padding: 0 1.5rem;
 }
+.caricin-grad{
+    padding-top: 2rem;
+    text-align: center;
+}
+.caricin-grad iframe{
+    width: 100%;
+    cursor: pointer;
+}
 /* conifers */
-.home-conifer-container{
+/* .home-conifer-container{
     background: url(./img/cetinari.jpg) no-repeat center top / cover;
     background-attachment: fixed;
 }
@@ -487,7 +508,7 @@ a, button, input, select{
 }
 .home-conifers p{
     margin: 6rem 0 3rem;
-}
+} */
 /* testimonials */
 .testimonials{
     background: url(./img/black-bcknd.jpg) no-repeat center bottom / cover;
@@ -1018,9 +1039,6 @@ footer ul li a:hover{
     .wrapper{
         max-width: 460px;
     }
-    .hero{
-        background: url(./img/hero-desktop.jpg) no-repeat center bottom / cover;
-    }
     .link-btn{
         font-size: 0.9rem;
     }
@@ -1086,15 +1104,19 @@ footer ul li a:hover{
     .about-us .link-btn{
         position: absolute;
         right: 0;
-        top: -12rem;
+        top: -11.125rem;
     }
     .about-us p, .about-us h3{
         width: 50%;
-        margin-left: auto;
+        margin: 2rem auto;
+    }
+    .about-us h3{
+        text-align: center;
+        margin-top: 3rem;
     }
     .our-products{
         max-width: 960px;
-        margin: auto;
+        margin: 6rem auto 0;
     }
     .our-work ul{
         width: max-content;

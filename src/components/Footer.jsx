@@ -14,7 +14,7 @@ function Footer() {
     <footer className="black">
         <div className="wrapper text-center">
             <Link to="/"><img src={logo} alt="logo" onClick={scrollToTop}/></Link>
-            <ul>
+            {/* <ul>
                 <li>
                     <Link to="/" className='gray' onClick={scrollToTop}>Početna</Link>
                 </li>
@@ -30,7 +30,7 @@ function Footer() {
                 <li>
                     <Link to="/naše-usluge" className='gray' onClick={scrollToTop}>Naše usluge</Link>
                 </li>
-            </ul>
+            </ul> */}
             <p className='footer-copy'>
                 Copyright <span className="footer-year">&copy; {year}</span> PR Royal Garden Milenković - Sva prava zadržana
             </p> 
