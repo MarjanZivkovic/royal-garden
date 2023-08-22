@@ -16,7 +16,31 @@ function Hero() {
   
   return (
     <main className='hero-container'>
-        <div className={`main hero hero${index}`}>
+        <div className={`main hero hero1 show${index}`}>
+            <div className="wrapper">
+            <h1 className="hero-title transformed-down">
+                Royal <span className="d-block">Garden</span>{" "}
+                <span className="yellow">Milenković</span>
+            </h1>
+            </div>
+        </div>
+        <div className={`main hero hero2 show${index}`}>
+            <div className="wrapper">
+            <h1 className="hero-title transformed-down">
+                Royal <span className="d-block">Garden</span>{" "}
+                <span className="yellow">Milenković</span>
+            </h1>
+            </div>
+        </div>
+        <div className={`main hero hero3 show${index}`}>
+            <div className="wrapper">
+            <h1 className="hero-title transformed-down">
+                Royal <span className="d-block">Garden</span>{" "}
+                <span className="yellow">Milenković</span>
+            </h1>
+            </div>
+        </div>
+        <div className={`main hero hero4 show${index}`}>
             <div className="wrapper">
             <h1 className="hero-title transformed-down">
                 Royal <span className="d-block">Garden</span>{" "}

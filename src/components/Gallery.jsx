@@ -5,6 +5,7 @@ function Gallery({images, width}) {
   const [ slide, setSlide ] = useState(0);
   const [ autoSlide, setAutoSlide ] = useState(true);
   const [touchStartX, setTouchStartX] = useState(0);
+  const [ screen, setScreen ] = useState(window.innerWidth);
   
   // functions to trigger previous and next slide
   function prevSlide(){
@@ -62,12 +63,25 @@ function Gallery({images, width}) {
     // eslint-disable-next-line
   }, []);
 
+
+  // tracking window resizing to handle changes of orientation
+  useEffect(() =>{
+    const updateWidth = () =>{
+      setScreen(window.innerWidth);
+    }
+    window.addEventListener('resize', updateWidth);
+
+    return(() => {
+      window.removeEventListener('resize', updateWidth);
+    })
+  }, [screen]);
+
   return (
     <div className="gallery-showroom">
         <div className="gallery-imgs d-flex" onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}>
             {images.map((img, i) => (
-                <img key={i} src={img} alt={img} className='gallery-img' style={{transform: `translateX(-${slide * width}px)`}} onMouseEnter={() => setAutoSlide(false)} onMouseLeave={() => setAutoSlide(true)}/>
+                <img key={i} src={img} alt={img} className='gallery-img' style={{transform: `translateX(-${slide * (screen < width ? screen : width)}px)`}} onMouseEnter={() => setAutoSlide(false)} onMouseLeave={() => setAutoSlide(true)}/>
             ))}
             {/* { video && <video src={video} className={`gallery-img video-slide ${images.length === 0 ? 'active-slide' : ''}`} style={{ transform: `translateX(-${slide * width}px)` }} autoPlay loop muted></video> } */}
         </div>

@@ -244,7 +244,17 @@ a, button, input, select{
     min-height: 75vh;
     position: relative;
 }
+.hero-container{
+    position: relative;
+    min-height: 75vh;
+}
 .hero{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
     transition: all ease-in-out 3s;
 }
 .hero1{
@@ -258,6 +268,9 @@ a, button, input, select{
 }
 .hero4{
     background: url(./img/home4.jpg) no-repeat center center / cover;
+}
+.hero1.show1, .hero2.show2, .hero3.show3, .hero4.show4{
+    opacity: 1;
 }
 @keyframes titleAnimation{
     0% {
@@ -449,7 +462,7 @@ a, button, input, select{
 .gallery-imgs{
     position: relative;
     flex-wrap: nowrap;
-    width: 560px;
+    max-width: 560px;
 }
 .gallery-img{
     transition: transform 0.6s ease;
@@ -680,7 +693,7 @@ footer ul li a:hover{
     background: url(./img/o-nama-hero.jpg) no-repeat center center / cover;
 }
 .our-intro.about-us{
-    padding: 4rem 0 6rem;
+    padding: 6rem 0;
 }
 /* counting numbers */
 .big-num-container{
@@ -855,7 +868,7 @@ footer ul li a:hover{
     text-transform: uppercase;
 }
 .flower-wrapper .gallery-showroom{
-    width: 400px;
+    max-width: 400px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -1022,12 +1035,14 @@ footer ul li a:hover{
     margin-top: 4rem;
 }
 .services-gallery .gallery-showroom{
-    position: relative;
     max-width: 400px;
+    position: relative;
     margin: 2rem auto;
     padding: 0;
-    border-radius: 1rem;
     box-shadow: 0 0 10px rgba(255, 233, 160, 0.5);
+}
+.services-gallery .gallery-imgs{
+    max-width: 400px;
 }
 
 /* RESPONSIVE */
@@ -1210,7 +1225,7 @@ footer ul li a:hover{
     .tree-links{
         position: absolute;
         right: 0;
-        top: -12rem;
+        top: -10.75rem;
     }
     .about-us.tree-intro .link-btn{
         position: relative;
@@ -1230,29 +1245,36 @@ footer ul li a:hover{
     .technology p{
         margin-top: 6rem;
     }
+    .services-gallery-wrapper{
+        max-width: 960px;
+        padding: 0 2rem;
+        margin: 0 auto;
+    }
     .services-gallery{
         display: flex;
-        flex-direction: row-reverse;
-        align-items: flex-start;
-        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
         gap: 2rem;
+    }
+    .services-gallery:nth-of-type(2n + 1){
+        flex-direction: row-reverse;
     }
     .services-gallery > *{
         flex: 1;
     }
     .services-gallery .gallery-showroom{
-        position: sticky;
-        top: 4rem;
         flex-basis: 400px;
+        border-radius: 1rem;
     }
 }
 @media (min-width: 960px){
     html{
         font-size: 20px;
     }
-    .hero{
+    /* .hero{
         min-height: 80vh;
-    }
+    } */
     .our-work{
         background-position: center 85%;
     }
@@ -1270,7 +1292,7 @@ footer ul li a:hover{
     }
     /* about */
     .our-intro.about-us{
-        padding: 3rem 0 8rem;
+        padding: 6rem 0 8rem;
     }
     .our-story{
         padding: 0 0 10rem;

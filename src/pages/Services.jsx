@@ -8,16 +8,11 @@ import Partners from '../components/Partners';
 import worker from '../img/radnik.jpg';
 import radovi1 from '../servicesImg/radovi1.jpg';
 import radovi2 from '../servicesImg/radovi2.jpg';
-import radovi3 from '../servicesImg/radovi3.jpg';
 import radovi4 from '../servicesImg/radovi4.jpg';
-import radovi5 from '../servicesImg/radovi5.jpg';
-import radovi6 from '../servicesImg/radovi6.jpg';
-import radovi7 from '../servicesImg/radovi7.jpg';
 import radovi8 from '../servicesImg/radovi8.jpg';
-import radovi9 from '../servicesImg/radovi9.jpg';
 import radovi10 from '../servicesImg/radovi10.jpg';
 
-const radoviArr = [radovi1, radovi2, radovi3, radovi4, radovi5, radovi6, radovi7, radovi8, radovi9, radovi10]
+const radoviArr = [ radovi1, radovi2, radovi4,  radovi8, radovi10]
 
 document.cookie = 'cookieName=cookieValue; SameSite=None; Secure';
 
@@ -92,14 +87,15 @@ function Services() {
         </div>
       </section>
       <section className='yard-types'>
-        <div className="wrapper">
+        <div className="services-gallery-wrapper">
           <h2 className="title transformed-up">
-            Stilovi i <span className="d-block cursive yellow">Oblici</span>
+            Neki od naših <span className="d-block cursive yellow">Radova</span>
           </h2>
-          <h3 className='yellow text-center cursive'>Odaberite dvorište po svom ukusu!</h3>
+          {/* <h3 className='yellow text-center cursive'>Odaberite dvorište po svom ukusu!</h3> */}
           <div className="services-gallery">
+            <h3 className="cursive title">Aqua park</h3>
             <Gallery images={radoviArr} width={400} />
-            <div>
+            {/* <div>
               <h3 className='yellow text-center cursive'>STILOVI</h3>
               <p><span className="yellow d-block">MODERAN STIL DVORIŠTA</span> 
               Ukoliko vam se dopada ideja da vaš vrt ne bude preopterećen mnogim detaljima, onda će ovaj moderni stil za uredjenje dvorista skrenuti vašu pažnju. Biljne vrste koje se koriste su vertikalne elegantne vrste, i razne druge vrste trava, a materijali su čelik, staklo, beton, crveni kedar i kamen.</p>
@@ -120,9 +116,17 @@ function Services() {
               Formu pravougaonike i kvadrata često koristimo kada dvorište treba da poprimi elegantan, pomalo i minimalistički izgled.</p>
               <p><span className="yellow d-block">Krugovi i Elipse u dvorištu</span> 
               Ukoliko želite da naglasite centar vrta ili da ga učinite pogodnim za neko određeno dešavanje, oblici poput kruga i elipse će učiniti da taj doživljaj postignete lako.</p>
-            </div>
+            </div> */}
           </div>
-        </div>
+          <div className="services-gallery">
+            <h3 className="cursive title">Dvorište 1</h3>
+            <Gallery images={radoviArr} width={400} />
+          </div>  
+          <div className="services-gallery">
+            <h3 className="cursive title">Dvorište 2</h3>
+            <Gallery images={radoviArr} width={400} />
+          </div>  
+        </div>    
       </section>
       <ServiceTestimonials />
       <Partners />
