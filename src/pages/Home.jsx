@@ -111,7 +111,7 @@ function Home({onLink}) {
           <h3 className="cursive text-center gray">Vaša vizija + naša stručnost = dvorište iz snova</h3>
           <div className="caricin-grad">
             <h2>Jedan od naših projekata</h2>
-            <iframe width="560" height="500" src="https://www.youtube-nocookie.com/embed/0Y6y8WwQJW4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe width="560" height="500" src="https://www.youtube-nocookie.com/embed/0Y6y8WwQJW4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </div>
         </div>
       </section>

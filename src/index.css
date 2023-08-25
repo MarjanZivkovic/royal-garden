@@ -162,7 +162,7 @@ a, button, input, select{
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     cursor: pointer;
 }
 .phone-btn{
@@ -788,8 +788,20 @@ footer ul li a:hover{
     font-size: 2.75rem;
 }
 /* PRODUCTS PAGE */
-.flower-page-hero{
+/* .flower-page-hero{
     background: url(./img/cvece-hero.jpg) no-repeat center center / cover;
+} */
+.flower-page-hero1{
+    background: url(./img/o-nama-hero.jpg) no-repeat center center / cover;
+}
+.flower-page-hero2{
+    background: url(./img/cvece-hero-2.jpg) no-repeat center center / cover;
+}
+.flower-page-hero3{
+    background: url(./img/cvece-hero-3.jpg) no-repeat center center / cover;
+}
+.flower-page-hero1.show1, .flower-page-hero2.show2, .flower-page-hero3.show3{
+    opacity: 1;
 }
 .offers{
     margin: 2rem 0 1rem;
@@ -1041,8 +1053,14 @@ footer ul li a:hover{
     padding: 0;
     box-shadow: 0 0 10px rgba(255, 233, 160, 0.5);
 }
+.aqua-gallery .gallery-showroom{
+    max-width: 500px;
+}
 .services-gallery .gallery-imgs{
     max-width: 400px;
+}
+.aqua-gallery .gallery-imgs{
+    max-width: 500px;
 }
 
 /* RESPONSIVE */
@@ -1266,6 +1284,9 @@ footer ul li a:hover{
     .services-gallery .gallery-showroom{
         flex-basis: 400px;
         border-radius: 1rem;
+    }
+    .aqua-gallery .gallery-showroom{
+        flex-basis: 500px;
     }
 }
 @media (min-width: 960px){

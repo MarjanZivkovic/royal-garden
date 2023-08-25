@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 
 import cvece from '../data/cvece';
+import CveceHero from '../components/CveceHero';
 import Start from "../components/Start";
 import NumCounter from '../components/NumCounter';
 
@@ -28,13 +29,14 @@ function Products({onLink}) {
   return (
     <>
       <Start />
-      <main className='main flower-page-hero'>
+      <CveceHero />
+      {/* <main className='main flower-page-hero'>
         <div className="wrapper">
           <h1 className="hero-title transformed-down">
               Cveće <span className="d-block">za sve</span> <span className="yellow cursive">Prilike</span>{" "}
           </h1>
         </div>
-      </main>
+      </main> */}
       <section className='products-intro about-us'>
         <div className="wrapper">
           <h3 className='cursive'>Nudimo Vam <span className='yellow'>širok izbor svežeg cveća</span> za sve prilike!</h3>

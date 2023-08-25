@@ -3,6 +3,7 @@ import jasen from '../treeImg/jasen.jpg';
 import bagrem from '../treeImg/bagrem.jpg';
 import breza from '../treeImg/breza.jpg';
 import platan from '../treeImg/platan.jpg';
+import crveniJavor from '../treeImg/crveni-javor.jpg';
 
 export const liscari = [
     {
@@ -17,6 +18,19 @@ export const liscari = [
         sun: true,
         shadow: true,
         img: [javor]
+    },
+    {
+        name: 'crveni javor',
+        description: 'Crveni (japanski) javor kroz celu godinu pruža divan vizuelni užitak.Cenjen je zbog svojih mladih izdanaka prodorne svetlo zelene boje u proleće, jakog zelenila leti, crvenih i zlatnih nijansi u jesen i zanimljivog spleta grana tokom zime.Odličan su kontrast zelenoj boji koja preovladava u većini vrtova.',
+        lifetime: 'višegodišnja',
+        endurance: 'prezimljava na otovrenom',
+        place: 'bašta, žardinjera',
+        height: 'do 4 m',
+        width: '2 m',
+        distance: '2-3 m',
+        sun: true,
+        shadow: true,
+        img: [crveniJavor]
     },
     {
         name: 'kuglasti jasen',

@@ -6,13 +6,28 @@ import ServiceTestimonials from "../components/ServiceTestimonials";
 import Partners from '../components/Partners';
 
 import worker from '../img/radnik.jpg';
-import radovi1 from '../servicesImg/radovi1.jpg';
-import radovi2 from '../servicesImg/radovi2.jpg';
-import radovi4 from '../servicesImg/radovi4.jpg';
-import radovi8 from '../servicesImg/radovi8.jpg';
-import radovi10 from '../servicesImg/radovi10.jpg';
+import stadion1 from '../servicesImg/stadion1.jpg';
+import stadion2 from '../servicesImg/stadion2.jpg';
+import stadion3 from '../servicesImg/stadion3.jpg';
+import stadion4 from '../servicesImg/stadion4.jpg';
+import akva1 from '../servicesImg/akva1.jpg';
+import akva2 from '../servicesImg/akva2.jpg';
+import akva3 from '../servicesImg/akva3.jpg';
+import akva4 from '../servicesImg/akva4.jpg';
+import akva5 from '../servicesImg/akva5.jpg';
+import komplex1 from '../servicesImg/komplex1.jpg';
+import komplex2 from '../servicesImg/komplex2.jpg';
+import komplex3 from '../servicesImg/komplex3.jpg';
+import komplex4 from '../servicesImg/komplex4.jpg';
+import mangir1 from '../servicesImg/mangir1.jpg';
+import mangir2 from '../servicesImg/mangir2.jpg';
+import mangir3 from '../servicesImg/mangir3.jpg';
+import mangir4 from '../servicesImg/mangir4.jpg';
 
-const radoviArr = [ radovi1, radovi2, radovi4,  radovi8, radovi10]
+const stadionArr = [ stadion1, stadion2, stadion3, stadion4 ];
+const akvaArr = [ akva1, akva2, akva3, akva4, akva5 ];
+const komplexArr = [ komplex1, komplex2, komplex3, komplex4 ];
+const mangirArr = [ mangir1, mangir2, mangir3, mangir4 ];
 
 document.cookie = 'cookieName=cookieValue; SameSite=None; Secure';
 
@@ -93,8 +108,8 @@ function Services() {
           </h2>
           {/* <h3 className='yellow text-center cursive'>Odaberite dvorište po svom ukusu!</h3> */}
           <div className="services-gallery">
-            <h3 className="cursive title">Aqua park</h3>
-            <Gallery images={radoviArr} width={400} />
+            <h3 className="cursive title">Gradski stadion u Leskovcu</h3>
+            <Gallery images={stadionArr} width={400} />
             {/* <div>
               <h3 className='yellow text-center cursive'>STILOVI</h3>
               <p><span className="yellow d-block">MODERAN STIL DVORIŠTA</span> 
@@ -118,13 +133,17 @@ function Services() {
               Ukoliko želite da naglasite centar vrta ili da ga učinite pogodnim za neko određeno dešavanje, oblici poput kruga i elipse će učiniti da taj doživljaj postignete lako.</p>
             </div> */}
           </div>
-          <div className="services-gallery">
-            <h3 className="cursive title">Dvorište 1</h3>
-            <Gallery images={radoviArr} width={400} />
+          <div className="services-gallery aqua-gallery">
+            <h3 className="cursive title">Aqua park Leskovac</h3>
+            <Gallery images={akvaArr} width={500} />
           </div>  
           <div className="services-gallery">
-            <h3 className="cursive title">Dvorište 2</h3>
-            <Gallery images={radoviArr} width={400} />
+            <h3 className="cursive title">Kompleks Apostolović</h3>
+            <Gallery images={komplexArr} width={400} />
+          </div>  
+          <div className="services-gallery">
+            <h3 className="cursive title">Mangir</h3>
+            <Gallery images={mangirArr} width={400} />
           </div>  
         </div>    
       </section>

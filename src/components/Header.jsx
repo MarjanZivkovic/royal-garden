@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import darkLogo from "../img/logo-dark1.jpg";
-import { FaAngleDown, FaPhone, FaTimes, FaEnvelope, FaFacebook, FaViber  } from "react-icons/fa";
+import { FaChevronDown, FaPhone, FaTimes, FaEnvelope, FaFacebook, FaViber  } from "react-icons/fa";
 
 function Header() {
   const [opened, setOpened] = useState(false);
@@ -20,9 +20,10 @@ function Header() {
   return (
     <nav className={`main-nav ${opened ? "opened" : ""}`}>
       <div className="wrapper d-flex big-screen-nav">
-        <button className="menu-btn d-flex" onClick={openMenu} title="Meni">
-          {opened ? <FaTimes /> : <FaAngleDown />}
-        </button>
+        {opened ? <button className="menu-btn d-flex" onClick={openMenu} title="Meni"><FaTimes /></button> : <button className="menu-btn d-flex" onClick={openMenu} title="Meni"><FaChevronDown /></button>}
+        {/* <button className="menu-btn d-flex" onClick={openMenu} title="Meni">
+          {opened ? <FaTimes /> : <FaChevronDown />}
+        </button> */}
         <div className="big-screen-link">
          <NavLink to="/o-nama" onClick={scrollToTop}>O nama</NavLink>
         </div>
