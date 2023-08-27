@@ -67,7 +67,7 @@ function Home({onLink}) {
           </h2>
           <ul className="black">
             <li>
-              <FaCheckCircle /> Uređenje dvorišta i parkova
+              <FaCheckCircle />  Uređenje dvorišta i parkova
             </li>
             <li>
               Proizvodnja i prodaja:
