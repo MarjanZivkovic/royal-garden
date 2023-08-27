@@ -23,11 +23,16 @@ import mangir1 from '../servicesImg/mangir1.jpg';
 import mangir2 from '../servicesImg/mangir2.jpg';
 import mangir3 from '../servicesImg/mangir3.jpg';
 import mangir4 from '../servicesImg/mangir4.jpg';
+import kuca1 from '../servicesImg/kuca1.jpg';
+import kuca2 from '../servicesImg/kuca2.jpg';
+import kuca3 from '../servicesImg/kuca3.jpg';
+import kuca4 from '../servicesImg/kuca4.jpg';
 
 const stadionArr = [ stadion1, stadion2, stadion3, stadion4 ];
 const akvaArr = [ akva1, akva2, akva3, akva4, akva5 ];
 const komplexArr = [ komplex1, komplex2, komplex3, komplex4 ];
 const mangirArr = [ mangir1, mangir2, mangir3, mangir4 ];
+const kucaArr = [ kuca1, kuca2, kuca3, kuca4 ];
 
 document.cookie = 'cookieName=cookieValue; SameSite=None; Secure';
 
@@ -144,6 +149,10 @@ function Services() {
           <div className="services-gallery">
             <h3 className="cursive title">Mangir</h3>
             <Gallery images={mangirArr} width={400} />
+          </div>  
+          <div className="services-gallery aqua-gallery">
+            <h3 className="cursive title">Kuća sa bazenom</h3>
+            <Gallery images={kucaArr} width={500} />
           </div>  
         </div>    
       </section>

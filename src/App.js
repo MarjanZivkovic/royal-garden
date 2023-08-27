@@ -26,12 +26,12 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage onLink={scrollToTop}/>,
     children: [
       {path: '/', element: <Home onLink={scrollToTop}/>},
-      {path: '/o-nama', element: <About />},
-      {path: '/naše-cveće', element: <Products onLink={scrollToTop}/>},
-      {path: '/naše-cveće/:flowerName', element: <Flower onLink={scrollToTop}/>},
-      {path: '/naše-drveće', element: <Conifers onLink={scrollToTop}/>},
-      {path: '/naše-drveće/:treeName', element: <Tree onLink={scrollToTop}/>},
-      {path: '/naše-usluge', element: <Services />},
+      {path: 'o-nama', element: <About />},
+      {path: 'naše-cveće', element: <Products onLink={scrollToTop}/>},
+      {path: 'naše-cveće/:flowerName', element: <Flower onLink={scrollToTop}/>},
+      {path: 'naše-drveće', element: <Conifers onLink={scrollToTop}/>},
+      {path: 'naše-drveće/:treeName', element: <Tree onLink={scrollToTop}/>},
+      {path: 'naše-usluge', element: <Services />},
     ]
   }
 ]);

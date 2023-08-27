@@ -162,15 +162,16 @@ a, button, input, select{
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
-    font-size: 1.125rem;
+    /* font-size: 1rem; */
     cursor: pointer;
 }
-.phone-btn{
-    font-size: 1rem;
-}
+/* .menu-btn img, .phone-btn svg{
+    padding: 0.15rem;
+} */
 .menu-btn:hover,.phone-btn:hover{
-    background-color: var(--primary-yellow);
-    color: var(--primary-black);
+    border: 2px solid var(--primary-yellow);
+    box-shadow: 0 0 15px rgba(255, 233, 160, 0.5);
+    /* color: var(--primary-black); */
 }
 .main-nav img{
     border-radius: 50%;
@@ -511,17 +512,6 @@ a, button, input, select{
     width: 100%;
     cursor: pointer;
 }
-/* conifers */
-/* .home-conifer-container{
-    background: url(./img/cetinari.jpg) no-repeat center top / cover;
-    background-attachment: fixed;
-}
-.home-conifers{
-    padding: 0 0 10rem;
-}
-.home-conifers p{
-    margin: 6rem 0 3rem;
-} */
 /* testimonials */
 .testimonials{
     background: url(./img/black-bcknd.jpg) no-repeat center bottom / cover;
@@ -690,7 +680,7 @@ footer ul li a:hover{
 }
 /* ABOUT US PAGE */
 .about-page-hero{
-    background: url(./img/o-nama-hero.jpg) no-repeat center center / cover;
+    background: url(./img/cvece-hero-3.jpg) no-repeat center center / cover;
 }
 .our-intro.about-us{
     padding: 6rem 0;
@@ -788,11 +778,8 @@ footer ul li a:hover{
     font-size: 2.75rem;
 }
 /* PRODUCTS PAGE */
-/* .flower-page-hero{
-    background: url(./img/cvece-hero.jpg) no-repeat center center / cover;
-} */
 .flower-page-hero1{
-    background: url(./img/o-nama-hero.jpg) no-repeat center center / cover;
+    background: url(./img/cvece-hero-1.jpg) no-repeat center center / cover;
 }
 .flower-page-hero2{
     background: url(./img/cvece-hero-2.jpg) no-repeat center center / cover;
