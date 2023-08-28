@@ -166,7 +166,7 @@ a, button, input, select{
     cursor: pointer;
 }
 .menu-btn img{
-   max-width: 50%;
+   max-width: 0.5rem;
 }
 /* .menu-btn img, .phone-btn svg{
    max-width: 1.5rem;
