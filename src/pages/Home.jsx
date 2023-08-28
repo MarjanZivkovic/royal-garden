@@ -83,7 +83,7 @@ function Home({onLink}) {
         </div>
       </section>
       <section className="gallery black">
-        <div className="wrapper">
+        <div className="home-gallery-wrapper">
           <h2 className="title">
             <span>Parkovi</span> <br />{" "}
             <span className="cursive">I Dvorišta</span>
@@ -125,16 +125,6 @@ function Home({onLink}) {
           Vidite sve
         </Link>
       </section>   
-      {/* <section className="black home-conifer-container">
-        <div className="wrapper home-conifers text-center">
-          <h2 className="title transformed-up">
-              <span>Četinari</span> <br />{" "}
-              <span className="cursive yellow">I Lišćari</span>
-          </h2>
-          <p>Dodajte zelenilo u Vaš svet tokom cele godine. <br /> Pogledajte našu ponudu četinara, lišćara i ukrasnog žbunja.</p>
-          <Link className="link-btn" to="/naše-drveće" onClick={onLink}>vidite sve</Link>
-        </div>
-      </section> */}
       <Testimonials />
       <Partners />
       <FindUs />

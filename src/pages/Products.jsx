@@ -30,13 +30,6 @@ function Products({onLink}) {
     <>
       <Start />
       <CveceHero />
-      {/* <main className='main flower-page-hero'>
-        <div className="wrapper">
-          <h1 className="hero-title transformed-down">
-              Cveće <span className="d-block">za sve</span> <span className="yellow cursive">Prilike</span>{" "}
-          </h1>
-        </div>
-      </main> */}
       <section className='products-intro about-us'>
         <div className="wrapper">
           <h3 className='cursive'>Nudimo Vam <span className='yellow'>širok izbor svežeg cveća</span> za sve prilike!</h3>
@@ -56,6 +49,7 @@ function Products({onLink}) {
       <section>
         <div className="wrapper">
           <p className="offers text-center yellow">Iz ponude izdvajamo</p>
+          <label htmlFor="search-cvece">&nbsp;</label>
           <input id='search-cvece' className='search-input' type="text" value={searchTerm} onChange={searchProducts} placeholder='Pretražite...' />
           { fiteredCvece.length > 0 ?
             <ul className='products-display-ul d-flex'>
