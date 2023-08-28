@@ -33,14 +33,6 @@ function Home({onLink}) {
     <>
       <Start />
       <Hero />
-      {/* <main className="main hero">
-        <div className="wrapper">
-          <h1 className="hero-title transformed-down">
-            Royal <span className="d-block">Garden</span>{" "}
-            <span className="yellow">Milenković</span>
-          </h1>
-        </div>
-      </main> */}
       <section className="about-us">
         <div className="wrapper">
           <Link className="link-btn" to="/o-nama" onClick={onLink}>
@@ -87,9 +79,6 @@ function Home({onLink}) {
             <li>
               <FaCheckCircle /> Ukrasnog žbunja
             </li>
-            {/* <li>
-              <FaCheckCircle /> Začinskog bilja
-            </li> */}
           </ul>
         </div>
       </section>

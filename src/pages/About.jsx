@@ -75,7 +75,7 @@ function About() {
       </section>
       <section className='testimonials'>
         <div className="wrapper">
-          <div className="big-num-container d-flex transformed-up">
+          <div className="big-num-container big-num-container-right d-flex transformed-up">
             <div className='black'>
               Više od<span className='d-block yellow'>vrsta cveća</span> 
             </div>
