@@ -162,16 +162,11 @@ a, button, input, select{
     border-radius: 50%;
     width: 2.25rem;
     height: 2.25rem;
-    /* font-size: 1rem; */
     cursor: pointer;
 }
 .menu-btn img{
-   max-width: 0.5rem;
-   padding: 0.25rem;
+   width: 1rem;
 }
-/* .menu-btn img, .phone-btn svg{
-   max-width: 1.5rem;
-} */
 .menu-btn:hover,.phone-btn:hover{
     border: 3px solid var(--primary-yellow);
     box-shadow: 0 0 15px rgba(255, 233, 160, 0.5);
