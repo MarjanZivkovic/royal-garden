@@ -507,7 +507,7 @@ a, button, input, select{
 .parks-copy{
     max-width: calc(100% - 3rem);
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 .parks-copy .link-btn{
     margin: 2rem auto;
@@ -763,6 +763,9 @@ footer ul li a:hover{
     font-weight: 500;
 }
 /* sales */
+.transparent-testimonial{
+    background: transparent;
+}
 .sales{
     padding: 6rem 0;
     overflow: hidden;
@@ -1337,6 +1340,9 @@ footer ul li a:hover{
     .home-gallery-wrapper{
         max-width: 960px;
         margin: 0 auto;
+    }
+    .parks-copy{
+        padding: 0 2rem;
     }
     .parks-copy .link-btn{
         margin: 2rem 0;

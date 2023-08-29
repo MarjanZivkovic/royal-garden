@@ -73,7 +73,7 @@ function About() {
           <p className='black'>Misija <strong>Royal Garden Milenković</strong> je da kreira životno okruženje koje usrećuje i inspiriše. Kroz našu posvećenost izvrsnosti, kvalitetne biljke i obraćanje pažnje na svaki detalj, stvaramo personalizovana i održiva rešenja koja unapređuju Vaš život.</p>
         </div>
       </section>
-      <section className='testimonials'>
+      <section className='testimonials transparent-testimonial'>
         <div className="wrapper">
           <div className="big-num-container big-num-container-right d-flex transformed-up">
             <div className='black'>
