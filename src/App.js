@@ -1,7 +1,6 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import Header from "./components/Header";
+
 import Root from "./pages/Root";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -72,15 +71,6 @@ function App() {
 
   return (
     <RouterProvider router={router}/>
-    // <>
-    //   <Header opened={opened} openMenu={openMenu}/>
-    //   <Router>
-    //     <Routes>
-    //       <Route path="/" element={<Home />}></Route>
-    //       <Route path="/o-nama" element={<About />}></Route>
-    //     </Routes>
-    //   </Router>
-    // </>
   );
 }
 

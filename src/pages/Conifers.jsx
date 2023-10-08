@@ -5,6 +5,7 @@ import cetinari from '../data/cetinari';
 import liscari from '../data/liscari';
 import zbunovi from '../data/zbunovi';
 import Start from "../components/Start";
+import Hero from '../components/Hero';
 import NumCounter from '../components/NumCounter';
 
 import {FaArrowUp, FaArrowDown} from 'react-icons/fa';
@@ -18,15 +19,12 @@ function Conifers({onLink}) {
   return (
     <>
       <Start />
-      <main className='main tree-page-hero'>
-        <div className="wrapper">
-          <h1 className="hero-title transformed-down">
-              Drveće <span className="d-block">za svako</span> <span className="yellow cursive">Dvorište</span>{" "}
-          </h1>
-        </div>
-      </main>
+      <Hero length={3} page={"trees"} />
       <section className='products-intro about-us tree-intro'>
         <div className="wrapper">
+          <h1 className="hero-title trees-hero-title transformed-down">
+              Drveće <span className="d-block">za svako</span> <span className="yellow cursive">Dvorište</span>{" "}
+          </h1>
           <div className='tree-links'>
             <span className="link-btn" onClick={() => document.getElementById('četinari')?.scrollIntoView()} >
              Četinari

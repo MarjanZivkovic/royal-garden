@@ -42,7 +42,7 @@ function Services() {
       <Start />
       <main className='main services-page-hero'>
         <div className="wrapper">
-          <h1 className="hero-title transformed-down">
+          <h1 className="hero-title single-image-hero-title transformed-down">
               Pobeda je <span className="d-block">u Vašem</span> <span className="yellow cursive">Dvorištu</span>{" "}
           </h1>
         </div>
@@ -111,32 +111,9 @@ function Services() {
           <h2 className="title transformed-up">
             Neki od naših <span className="d-block cursive yellow">Radova</span>
           </h2>
-          {/* <h3 className='yellow text-center cursive'>Odaberite dvorište po svom ukusu!</h3> */}
           <div className="services-gallery">
             <h3 className="cursive title">Gradski stadion u Leskovcu</h3>
             <Gallery images={stadionArr} width={400} />
-            {/* <div>
-              <h3 className='yellow text-center cursive'>STILOVI</h3>
-              <p><span className="yellow d-block">MODERAN STIL DVORIŠTA</span> 
-              Ukoliko vam se dopada ideja da vaš vrt ne bude preopterećen mnogim detaljima, onda će ovaj moderni stil za uredjenje dvorista skrenuti vašu pažnju. Biljne vrste koje se koriste su vertikalne elegantne vrste, i razne druge vrste trava, a materijali su čelik, staklo, beton, crveni kedar i kamen.</p>
-              <p><span className="yellow d-block">FORMALNI STIL DVORIŠTA</span> 
-              Ukoliko volite simetriju i prave linije ovo je Vaš stil. Različito postavljene zimzelene biljke, travnjaci, žive ograde, drveće i staze su samo neki od elemenata koji izazivaju snažan utisak reda kod ovog stila dvorišta.</p>  
-              <p><span className="yellow d-block">TROPSKI STIL DVORIŠTA</span> 
-              Ovakva dvorišta podsećaju na dvorišta u tropskim krajevima, opuštena i relaksirajuća. Dominira neformalni efekat sa raznim listopadnim vrstama, velikim bogatim zelenim, i ljubičastim, crvenim i narandžastim lisovima.</p>
-              <p><span className="yellow d-block">ORIJENTALNI STIL DVORIŠTA</span> 
-              Ovaj stil je u stilu Japanskih vrtova, sa raznim minijaturnim drvećem, aranžiranim kamenjem i jezercetom. Za uredjenje baste ovog tipa koristimo još cvetajuće žbunaste vrste biljaka i drveće.</p>
-              <h3 className='yellow text-center cursive'>OBLICI</h3>
-              <p><span className="yellow d-block">S i C linije u dvorištu</span> 
-              Ove linije mogu poslužiti kao ideje za uredjenje dvorista, naročito ako birate neformalan i prirodan stil.</p>
-              <p><span className="yellow d-block">Krstaste linije u dvorištu</span> 
-              Prave linije upravne jedna na drugu formiraju oblik krsta koji je tradicionalno korišćen u Francuskim vrtovima i formalnim stilovima XVII i XVIII veka. Krst pravi vizure kroz celo dvorište, i pogodni su za uređenjivanje dvorišta velikih površina.</p>
-              <p><span className="yellow d-block">Dijagonale u uređivanju dvorišta</span> 
-              Dijagonalne linije stvaraju više energije i pokreta od krst linija. One mogu probuti floralnost, ali isto tako mogu formirati osnovu za neformalni, asimetrični dizajn.</p>
-              <p><span className="yellow d-block">Pravouganici i Kvadrati u uređenju vrta</span> 
-              Formu pravougaonike i kvadrata često koristimo kada dvorište treba da poprimi elegantan, pomalo i minimalistički izgled.</p>
-              <p><span className="yellow d-block">Krugovi i Elipse u dvorištu</span> 
-              Ukoliko želite da naglasite centar vrta ili da ga učinite pogodnim za neko određeno dešavanje, oblici poput kruga i elipse će učiniti da taj doživljaj postignete lako.</p>
-            </div> */}
           </div>
           <div className="services-gallery aqua-gallery">
             <h3 className="cursive title">Aqua park Leskovac</h3>

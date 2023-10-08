@@ -26,15 +26,18 @@ import gallery8 from "../img/gallery8.jpg"
 
 const images = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7, gallery8];
 
-document.cookie = 'cookieName=cookieValue; SameSite=None; Secure';
 
 function Home({onLink}) {
   return (
     <>
       <Start />
-      <Hero />
+      <Hero length={4} page={"home"}/>
       <section className="about-us">
         <div className="wrapper">
+          <h1 className="hero-title">
+              Royal <span className="d-block">Garden</span>{" "}
+              <span className="yellow">Milenković</span>
+          </h1>
           <Link className="link-btn" to="/o-nama" onClick={onLink}>
             Više o nama
           </Link>

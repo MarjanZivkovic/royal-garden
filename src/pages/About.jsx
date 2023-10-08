@@ -8,8 +8,6 @@ import Partners from '../components/Partners';
 
 import nenad from '../img/nenad.jpg';
 
-document.cookie = 'cookieName=cookieValue; SameSite=None; Secure';
-
 
 function About() {
   return (
@@ -17,7 +15,7 @@ function About() {
       <Start />
       <main className="main about-page-hero">
         <div className="wrapper">
-          <h1 className="hero-title transformed-down">
+          <h1 className="hero-title single-image-hero-title transformed-down">
               Rasadnik <span className="d-block">sa</span> <span className="yellow cursive">Tradicijom</span>{" "}
           </h1>
         </div>

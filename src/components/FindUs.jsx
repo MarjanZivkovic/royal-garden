@@ -1,9 +1,6 @@
 import React from 'react';
 import Map from './Map';
 
-document.cookie = 'cookieName=cookieValue; SameSite=None; Secure';
-
-
 const date = new Date();
 const workingHours = (date.getHours() > 6 && date.getHours() < 18);
 

@@ -170,7 +170,6 @@ a, button, input, select{
 .menu-btn:hover,.phone-btn:hover{
     border: 3px solid var(--primary-yellow);
     box-shadow: 0 0 15px rgba(255, 233, 160, 0.5);
-    /* color: var(--primary-black); */
 }
 .main-nav img{
     border-radius: 50%;
@@ -259,19 +258,19 @@ a, button, input, select{
     opacity: 0;
     transition: all ease-in-out 3s;
 }
-.hero1{
+.home-hero1{
     background: url(./img/home1.jpg) no-repeat center center / cover;
 }    
-.hero2{
+.home-hero2{
     background: url(./img/home2.jpg) no-repeat center center / cover;
 }
-.hero3{
+.home-hero3{
     background: url(./img/home3.jpg) no-repeat center center / cover;
 }
-.hero4{
+.home-hero4{
     background: url(./img/home4.jpg) no-repeat center center / cover;
 }
-.hero1.show1, .hero2.show2, .hero3.show3, .hero4.show4{
+.home-hero1.show1, .home-hero2.show2, .home-hero3.show3, .home-hero4.show4{
     opacity: 1;
 }
 @keyframes titleAnimation{
@@ -287,7 +286,7 @@ a, button, input, select{
 }
 .hero-title{
     position: absolute;
-    bottom: 0;
+    top: -19.5rem;
     line-height: 1.1;
     font-size: 3rem;
     font-weight: 500;
@@ -392,7 +391,6 @@ a, button, input, select{
 .our-work{
     margin-top: 5rem;
     background: url(./img/yellow-bcknd.jpg) no-repeat center bottom / cover;
-    /* background-attachment: fixed; */
 }
 .our-work ul{
     padding: 0 0 3rem;
@@ -404,7 +402,6 @@ a, button, input, select{
     font-weight: 500;
     display: flex;
     align-items: center;
-    /* gap: 1rem; */
 }
 .our-work ul li > *{
     margin-right: 1rem;
@@ -461,7 +458,6 @@ a, button, input, select{
 }
 .home-gallery{
     align-items: flex-start;
-    /* gap: 2rem; */
     padding: 3rem 0 0;
 }
 .gallery-showroom{
@@ -484,7 +480,6 @@ a, button, input, select{
     bottom: 2rem;
     width: 100%;
     justify-content: center;  
-    /* gap: 0.9rem; */
     z-index: 2; 
 }
 .dot{
@@ -531,7 +526,6 @@ a, button, input, select{
 /* testimonials */
 .testimonials{
     background: url(./img/black-bcknd.jpg) no-repeat center bottom / cover;
-    /* background-attachment: fixed; */
 }
 .line{
     height: 1px;
@@ -577,7 +571,6 @@ a, button, input, select{
 }
 .partner-imgs{
     justify-content: center;
-    /* gap: 2rem; */
 }
 .partner-imgs a{
     filter: brightness(0.3);
@@ -699,13 +692,15 @@ footer ul li a:hover{
 .about-page-hero{
     background: url(./img/cvece-hero-3.jpg) no-repeat center center / cover;
 }
+.single-image-hero-title{
+    top: calc(75vh - 10rem);
+}
 .our-intro.about-us{
     padding: 6rem 0;
 }
 /* counting numbers */
 .big-num-container{
     justify-content: flex-start;
-    /* gap: 1rem; */
     font-size: 1.5rem;
 }
 .big-num-container > *:first-child{
@@ -778,7 +773,6 @@ footer ul li a:hover{
     padding: 0.5rem 0;
     display: flex;
     align-items: center;
-    /* gap: 0.5rem; */
 }
 .sales ul li >*:first-child{
     margin-right: 0.5rem;
@@ -804,17 +798,20 @@ footer ul li a:hover{
     font-size: 2.75rem;
 }
 /* PRODUCTS PAGE */
-.flower-page-hero1{
+.flowers-hero1{
     background: url(./img/cvece-hero-1.jpg) no-repeat center center / cover;
 }
-.flower-page-hero2{
+.flowers-hero2{
     background: url(./img/cvece-hero-2.jpg) no-repeat center center / cover;
 }
-.flower-page-hero3{
+.flowers-hero3{
     background: url(./img/cvece-hero-3.jpg) no-repeat center center / cover;
 }
-.flower-page-hero1.show1, .flower-page-hero2.show2, .flower-page-hero3.show3{
+.flowers-hero1.show1, .flowers-hero2.show2, .flowers-hero3.show3{
     opacity: 1;
+}
+.flowers-hero-title{
+    top: -21rem;
 }
 .offers{
     margin: 2rem 0 1rem;
@@ -844,7 +841,6 @@ footer ul li a:hover{
     padding: 2rem 0 6rem;
     justify-content: center;
     align-items: flex-start;
-    /* gap: 2rem 1rem; */
 }
 .products-display-ul li{
     margin: 2rem 1rem;
@@ -935,15 +931,26 @@ footer ul li a:hover{
 }
 .flower-container .link-btn{
     width: max-content;
-    /* gap: 1rem; */
     margin: 2rem auto;
 }
 .flower-container .link-btn > *:first-child{
     margin-right: 1rem;
 }
 /* TREES PAGE */
-.tree-page-hero{
-    background: url(./img/drvece-hero.jpg) no-repeat center center / cover;
+.trees-hero1{
+    background: url(./img/drvece-hero1.jpg) no-repeat center center / cover;
+}
+.trees-hero2{
+    background: url(./img/drvece-hero2.jpg) no-repeat center center / cover;
+}
+.trees-hero3{
+    background: url(./img/drvece-hero3.jpg) no-repeat center center / cover;
+}
+.trees-hero1.show1, .trees-hero2.show2, .trees-hero3.show3{
+    opacity: 1;
+}
+.trees-hero-title{
+    top: -17rem;
 }
 .tree-intro{
     padding-bottom: 10rem;
@@ -1021,7 +1028,6 @@ footer ul li a:hover{
 }
 .list-of-services{
     background: url(./img/busen.jpg) no-repeat center bottom / cover;
-    /* background-attachment: fixed; */
     padding-bottom: 6rem;
 }
 .list-of-services ul{
@@ -1153,6 +1159,9 @@ footer ul li a:hover{
     .logo-home-link img{
         transform: translateX(0.75rem);
     }
+    .hero-title{
+        top: -22.5rem;
+    }
     .about-us .link-btn{
         position: absolute;
         right: 0;
@@ -1176,12 +1185,10 @@ footer ul li a:hover{
     }
     .our-work ul li{
         justify-content: center;
-        /* gap: 1rem; */
     }
     .best-kaliopa, .crown-div{
         display: flex;
         align-items: center;
-        /* gap: 3rem; */
     }
     .best-kaliopa >*:first-child{
         padding-right: 3rem;
@@ -1235,7 +1242,6 @@ footer ul li a:hover{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        /* gap: 2rem; */
     }
     .location > *{
         flex: 1;
@@ -1251,6 +1257,9 @@ footer ul li a:hover{
         background-position: center 30%;
     }
     /* about */
+    .single-image-hero-title{
+        top: calc(75vh - 10.25rem);
+    }
     .beginnings{
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -1259,7 +1268,6 @@ footer ul li a:hover{
     }
     .total-sale{
         flex-direction: row;
-        /* gap: 1rem; */
     }
     .total-sale .big-num{
         margin: 0 1rem;
@@ -1267,7 +1275,14 @@ footer ul li a:hover{
     .sales ul{
         width: fit-content;
     }
+    /* flowers page */
+    .flowers-hero-title{
+        top: -20rem;
+    }
     /* trees page */
+    .trees-hero-title{
+        top: -20.15rem;
+    }
     .tree-copy{
         width: 50%;
     }
@@ -1304,7 +1319,6 @@ footer ul li a:hover{
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        /* gap: 2rem; */
     }
     .services-gallery > *{
         padding: 0 2rem;
@@ -1417,4 +1431,3 @@ footer ul li a:hover{
         padding: 3rem 8.5rem 3rem 0;
     }
 }
-
