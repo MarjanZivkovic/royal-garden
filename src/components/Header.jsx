@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import darkLogo from "../img/logo-dark1.jpg";
-import { FaPhone, FaEnvelope, FaFacebook, FaViber } from "react-icons/fa";
+import { FaPhone, FaEnvelope, FaFacebook, FaViber, FaInstagram } from "react-icons/fa";
 
 import arrowDown from '../img/arrowDown.svg';
 import times from '../img/times.svg';
@@ -70,6 +70,7 @@ function Header() {
             <li><a href="viber://chat/?number=%2B38169796362"><FaViber />Viber Chat</a></li>
            <li><a href="mailto:n.milenkovic1968@gmail.com"><FaEnvelope /> n.milenkovic1968@gmail.com</a></li>
            <li><a href="https://www.facebook.com/FLOWERS.MILENKOVIC/" target="_blank" rel="noopener noreferrer"><FaFacebook /> FLOWERS.MILENKOVIC</a></li>
+           <li><a href="https://instagram.com/royal_garden_milenkovic?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer"><FaInstagram /> royal_garden_milenkovic</a></li>
         </ul>}
         {opened && <div className="nav-copy text-center">&copy; <span className="yellow">{year}</span> RG Milenković</div>}
       </div>

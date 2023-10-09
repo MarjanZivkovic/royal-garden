@@ -26,7 +26,7 @@ function ContactUs() {
                         <FaFacebook /> <a href="https://www.facebook.com/FLOWERS.MILENKOVIC/" target="_blank" rel="noopener noreferrer"> Facebook </a> 
                     </div>
                     <div className="d-flex">
-                        <FaInstagram /> <a href="https://instagram.com/royalgardenmilenkovic?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer"> Instagram </a>
+                        <FaInstagram /> <a href="https://instagram.com/royal_garden_milenkovic?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer"> Instagram </a>
                     </div>
                 </div>
             </div>
