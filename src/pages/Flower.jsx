@@ -5,6 +5,7 @@ import {FaArrowLeft} from 'react-icons/fa';
 import Gallery from '../components/Gallery';
 
 import cvece from '../data/cvece';
+import { hrizanteme } from '../data/hrizanteme';
 import senka from '../productsImg/senka.svg';
 import sirina from '../productsImg/sirina.svg';
 import sunce from '../productsImg/sunce.svg';
@@ -18,7 +19,7 @@ const months = [
 function Flower() {
   const {flowerName} = useParams();
 
-  const cvet = cvece.find( item => item.name === flowerName );
+  const cvet = cvece.find( item => item.name === flowerName ) || hrizanteme.find( item => item.name === flowerName );
 
   if(!cvet){
     return (<h2 className='text-center'>Nema cveta koji tražite!</h2>);

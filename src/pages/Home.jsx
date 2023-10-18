@@ -49,8 +49,7 @@ function Home({onLink}) {
           </p>
           <p>
             Nudimo Vam <span className="yellow">širok izbor svežeg cveća</span>{" "}
-            za sve prilike. Bilo da želite da obradujete voljenu osobu divnim
-            buketom ili ulepšate Vaš dom ili baštu, imamo sve što Vam je
+            za sve prilike. Bilo da želite da obradujete voljenu osobu omiljenim cvetom ili ulepšate Vaš dom ili baštu, imamo sve što Vam je
             potrebno da Vaša ideja zaživi.
           </p>
         </div>
@@ -62,25 +61,25 @@ function Home({onLink}) {
           </h2>
           <ul className="black">
             <li>
-              <FaCheckCircle />  Uređenje dvorišta i parkova
+              <FaCheckCircle /> <span>Uređenje i održavanje dvorišta i parkova</span> 
             </li>
             <li>
-              Proizvodnja i prodaja:
+              <FaCheckCircle /> <span>Ugradnja sistema za zalivanje</span>  
             </li>
             <li>
-              <FaCheckCircle />  Cveća
+            <FaCheckCircle /> <span>Proizvodnja i prodaja:</span> 
             </li>
-            <li>
-              <FaCheckCircle /> Rasada
+            <li className="nested-li">
+              🌸  Cveća
             </li>
-            <li>
-              <FaCheckCircle /> Četinara
+            <li className="nested-li">
+              🌱 Rasada
             </li>
-            <li>
-              <FaCheckCircle /> Lišćara
+            <li className="nested-li">
+              🌲 Četinara
             </li>
-            <li>
-              <FaCheckCircle /> Ukrasnog žbunja
+            <li className="nested-li">
+              🍁 Lišćara
             </li>
           </ul>
         </div>

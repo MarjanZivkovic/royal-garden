@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import darkLogo from "../img/logo-dark1.jpg";
+import darkLogo from "../img/logo.png";
 import { FaPhone, FaEnvelope, FaFacebook, FaViber, FaInstagram } from "react-icons/fa";
 
 import arrowDown from '../img/arrowDown.svg';

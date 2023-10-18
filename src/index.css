@@ -126,7 +126,7 @@ a, button, input, select{
 }
 .main-ul{
     transform: translateY(-100vh);
-    padding: 2rem 0;
+    padding: 1rem 0 2rem;
     border-bottom: 1px solid var(--primary-yellow);
     transition: all 0.8s linear;
 }
@@ -136,7 +136,7 @@ a, button, input, select{
 .main-nav li{
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 0.75rem 0;
+    padding: 0.5rem 0;
     transform: rotateY(180deg);
     opacity: 0;
     transition: all 1.2s linear;
@@ -173,7 +173,10 @@ a, button, input, select{
 }
 .main-nav img{
     border-radius: 50%;
-    max-width: 4rem;
+    max-width: 5rem;
+}
+.main-nav img:hover{
+    filter: drop-shadow(0 0 20px var(--primary-black));
 }
 .ul-wrapper{
     height: 0;
@@ -394,7 +397,6 @@ a, button, input, select{
 }
 .our-work ul{
     padding: 0 0 3rem;
-    text-align: right;
 }
 .our-work ul li{
     padding: 1rem 0;
@@ -403,8 +405,14 @@ a, button, input, select{
     display: flex;
     align-items: center;
 }
-.our-work ul li > *{
+.our-work ul li svg{
     margin-right: 1rem;
+}
+.our-work ul li span{
+    flex:1
+}
+.our-work ul li.nested-li{
+    padding-left: 2rem;
 }
 
 /* why us */
@@ -804,9 +812,9 @@ footer ul li a:hover{
 .flowers-hero2{
     background: url(./img/cvece-hero-2.jpg) no-repeat center center / cover;
 }
-.flowers-hero3{
+/* .flowers-hero3{
     background: url(./img/cvece-hero-3.jpg) no-repeat center center / cover;
-}
+} */
 .flowers-hero1.show1, .flowers-hero2.show2, .flowers-hero3.show3{
     opacity: 1;
 }
@@ -876,6 +884,17 @@ footer ul li a:hover{
 }
 .ask-for-more{
     padding: 0 0 5rem;
+}
+/* hrizanteme */
+.hrizantema-container{
+    padding: 5rem 0 7rem;
+}
+.hrizantema-container .link-btn{
+    width: max-content;
+    margin: 0 auto 3rem;
+}
+.hrizantema-container .link-btn span{
+    margin-left: 1rem;
 }
 /* SINGLE PRODUCT (FLOWER) PAGE*/
 .flower-container{
@@ -1183,9 +1202,9 @@ footer ul li a:hover{
         width: max-content;
         margin: auto;
     }
-    .our-work ul li{
+    /* .our-work ul li{
         justify-content: center;
-    }
+    } */
     .best-kaliopa, .crown-div{
         display: flex;
         align-items: center;

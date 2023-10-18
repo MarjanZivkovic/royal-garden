@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Products from "./pages/Products";
 import Flower from "./pages/Flower";
+import Hrizantema from "./pages/Hrizantema";
 import Conifers from "./pages/Conifers";
 import Tree from "./pages/Tree";
 import Services from "./pages/Services";
@@ -59,6 +60,7 @@ const router = createBrowserRouter([
       {path: '', element: <Home onLink={scrollToTop}/>},
       {path: 'o-nama', element: <About />},
       {path: 'naše-cveće', element: <Products onLink={scrollToTop}/>},
+      {path: 'naše-cveće/hrizanteme', element: <Hrizantema onLink={scrollToTop} />},
       {path: 'naše-cveće/:flowerName', element: <Flower onLink={scrollToTop}/>},
       {path: 'naše-drveće', element: <Conifers onLink={scrollToTop}/>},
       {path: 'naše-drveće/:treeName', element: <Tree onLink={scrollToTop}/>},

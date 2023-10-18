@@ -5,7 +5,6 @@ function Hero({length, page}) {
 
   function nextImg(){
     setIndex( prevState => prevState === length ? 1 : prevState + 1 )
-    // setIndex( prevState => prevState === 4 ? 1 : prevState + 1 )
   }
 
   useEffect(() =>{

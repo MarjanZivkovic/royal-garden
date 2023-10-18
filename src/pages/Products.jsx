@@ -2,42 +2,46 @@ import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 
 import cvece from '../data/cvece';
-// import CveceHero from '../components/CveceHero';
+// import { hrizanteme } from '../data/hrizanteme';
 import Hero from '../components/Hero';
 import Start from "../components/Start";
 import NumCounter from '../components/NumCounter';
+import hrizantema from '../productsImg/hrizantema1.jpg';
 
 import {FaArrowDown} from 'react-icons/fa';
 
+// const mergedArrays = hrizanteme.concat(cvece);
+
 
 // sorting by name
-const sortedCvece = cvece.sort((a, b) => a.name.localeCompare(b.name));
+// const sortedCvece = cvece.sort((a, b) => a.name.localeCompare(b.name));
 
 function Products({onLink}) {
-  const [ searchTerm, setSearchTerm ] = useState('');
-  const [ fiteredCvece, setFilteredCvece ] = useState(sortedCvece);
+  // const [ searchTerm, setSearchTerm ] = useState('');
+  // const [ fiteredCvece, setFilteredCvece ] = useState(cvece);
+  const [ Cvece ] = useState(cvece);
 
   // live search functionality
-  function searchProducts(e){
-    const query = e.target.value;
-    setSearchTerm(query);
+  // function searchProducts(e){
+  //   const query = e.target.value;
+  //   setSearchTerm(query);
 
-    const filteredProducts = sortedCvece.filter( item => item.name.toLowerCase().includes(query.toLowerCase()));
-    setFilteredCvece(filteredProducts);
-  }
+  //   const filteredProducts = cvece.filter( item => item.name.toLowerCase().includes(query.toLowerCase()));
+  //   setFilteredCvece(filteredProducts);
+  // }
  
 
   return (
     <>
       <Start />
-      <Hero length={3} page={"flowers"} />
+      <Hero length={2} page={"flowers"} />
       <section className='products-intro about-us'>
         <div className="wrapper">
           <h1 className="hero-title flowers-hero-title transformed-down">
              Cveće <span className="d-block">za sve</span> <span className="yellow cursive">Prilike</span>{" "}
           </h1>
           <h3 className='cursive'>Nudimo Vam <span className='yellow'>širok izbor svežeg cveća</span> za sve prilike!</h3>
-          <p>Od klasičnih ruža i ljiljana preko egzotičnih orhideja do kraljice kaliope, naše <span className="yellow">ručno ubrano</span> cveće zadovoljiće sve Vaše potrebe.</p>
+          {/* <p>Od klasičnih ruža i ljiljana preko egzotičnih orhideja do kraljice kaliope, naše <span className="yellow">ručno ubrano</span> cveće zadovoljiće sve Vaše potrebe.</p> */}
         </div>
       </section>
       <section className='num-counter-on-products'>
@@ -53,11 +57,17 @@ function Products({onLink}) {
       <section>
         <div className="wrapper">
           <p className="offers text-center yellow">Iz ponude izdvajamo</p>
-          <label htmlFor="search-cvece">&nbsp;</label>
-          <input id='search-cvece' className='search-input' type="text" value={searchTerm} onChange={searchProducts} placeholder='Pretražite...' />
-          { fiteredCvece.length > 0 ?
+          {/* <label htmlFor="search-cvece">&nbsp;</label> */}
+          {/* <input id='search-cvece' className='search-input' type="text" value={searchTerm} onChange={searchProducts} placeholder='Pretražite...' /> */}
+          { Cvece.length > 0 ?
             <ul className='products-display-ul d-flex'>
-              {fiteredCvece.map( item =>(
+              <li className='text-center'>
+                <Link to={`/naše-cveće/hrizanteme`} onClick={onLink}>
+                    <img src={hrizantema} alt="hrizanteme" />
+                    <span>Hrizanteme</span>
+                </Link>
+              </li>
+              {Cvece.map( item =>(
                 <li key={item.name} className='text-center'>
                   <Link to={`/naše-cveće/${item.name}`} onClick={onLink}>
                     <img src={item.img[0]} alt={item.name} />

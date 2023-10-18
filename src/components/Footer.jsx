@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {FaArrowCircleUp} from 'react-icons/fa';
-import logo from '../img/logo.jpg';
+import logo from '../img/logo.png';
 
 const year = new Date().getFullYear();
 
