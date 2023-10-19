@@ -86,10 +86,10 @@ function Gallery({images, width}) {
             {/* { video && <video src={video} className={`gallery-img video-slide ${images.length === 0 ? 'active-slide' : ''}`} style={{ transform: `translateX(-${slide * width}px)` }} autoPlay loop muted></video> } */}
         </div>
         <div className="dots d-flex">
-          {images.map((_, i) =>(
+          {images.length > 1 ? images.map((_, i) =>(
             <div key={i} className={`dot ${ i ===  slide ? 'active-slide' : '' }`} onClick={() => setSlide(i)}>
             </div>
-          ))}
+          )) : false}
         </div>
         {/* <div className="gallery-btns d-flex">
             <div onClick={prevSlide}><FaArrowLeft /></div>

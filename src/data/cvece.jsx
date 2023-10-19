@@ -30,7 +30,6 @@ import karanfil1 from "../productsImg/karanfil1.jpg";
 import karanfil2 from "../productsImg/karanfil2.jpg";
 import karanfil3 from "../productsImg/karanfil3.jpg";
 import bozicnaZvezda1 from "../productsImg/bozicnazvezda1.jpg";
-import bozicnaZvezda2 from "../productsImg/bozicnazvezda2.jpg";
 import hortenzija1 from "../productsImg/hortenzija1.jpg";
 import hortenzija2 from "../productsImg/hortenzija2.jpg";
 import hortenzija3 from "../productsImg/hortenzija3.jpg";
@@ -52,7 +51,7 @@ export const cvece = [
         sun: true,
         shadow: true,
         time: ['APR', 'MAJ', 'JUN'],
-        img: [bozicnaZvezda1, bozicnaZvezda2]
+        img: [bozicnaZvezda1]
     },
     {
         name: 'ciklama',
