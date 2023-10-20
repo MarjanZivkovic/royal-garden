@@ -327,7 +327,7 @@ a, button, input, select{
 /* our-products */
 .our-products{
     position: relative;
-    padding: 0 0 8rem;
+    padding: 4rem 0 8rem;
     margin-top: 6rem;
 }
 .our-products .transformed-down{
@@ -416,6 +416,9 @@ a, button, input, select{
 }
 
 /* why us */
+.why-us{
+    --blue: #0066cb;
+}
 .why-us p{
     margin: 3rem 0 0;
 }
@@ -432,17 +435,48 @@ a, button, input, select{
 }
 .why-div{
     text-transform: uppercase;
-    margin: 1rem 0;
+    margin: 1rem auto 2rem;
+    max-width: fit-content;
+    border-bottom: 1px solid var(--blue);
 }
 .why-icons{
     padding: 0 1rem;
+    position: relative;
+}
+.why-progressBar{
+    position: absolute;
+    left: 1.5rem;
+    height: 3px;
+    width: 85%;
+    background-color: var(--primary-yellow);
+    z-index: -1;
+}
+.why-progressBar::before{
+    content: '';
+    position: absolute;
+    left: 1.5rem;
+    height: 3px;
+    width: 0;
+    background-color: var(--blue);
+    z-index: -1;
+    transition: 0.5s ease;
+}
+.why-progressBar.second::before{
+    width: 25%;
+}
+.why-progressBar.third::before{
+    width: 60%;
+}
+.why-progressBar.fourth::before{
+    width: 90%;
 }
 .icon-flex{
     justify-content: center;
     background-color: #fff;
     color: var(--primary-black);
-    width: 2.5rem;
-    height: 2.5rem;
+    border: 4px solid var(--primary-yellow);
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -451,8 +485,9 @@ a, button, input, select{
     background-color: var(--primary-yellow);
 }
 .icon-flex.checked{
-    transform: scale(1.5);
-    font-size: 1.2rem;
+    border: 3px solid var(--blue);
+    transform: scale(1.25);
+    font-size: 1.15rem;
     background-color: var(--primary-yellow);
 }
 /* gallery */

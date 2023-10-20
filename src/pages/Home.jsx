@@ -120,7 +120,7 @@ function Home({onLink}) {
           </div>
           <div className="fake-img">&nbsp;</div>
           <div className="last-img">
-            <Link to='/naše-cveće/verbena' onClick={onLink}><img src={verbena} alt="verbena" /></Link>
+            <Link to='/naše-cveće/viseća%20verbena' onClick={onLink}><img src={verbena} alt="verbena" /></Link>
           </div>
         </div>
         <Link className="link-btn" to="/naše-cveće" onClick={onLink}>

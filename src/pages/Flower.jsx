@@ -84,7 +84,7 @@ function Flower() {
           </div>
           <div className='text-center'>
             <Link className="link-btn d-flex" to="/naše-cveće">
-              <FaArrowLeft /> <span>Nazad</span> 
+              <FaArrowLeft /> <span>Cveće</span> 
             </Link>
           </div>
         </div>

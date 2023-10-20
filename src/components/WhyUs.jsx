@@ -26,6 +26,7 @@ function WhyUs() {
             <p>I ZATO što imamo...</p>
             <div className="why-div yellow text-center">{benefit}</div>
             <div className="why-icons d-flex transformed-down">
+                <div className={`why-progressBar ${benefit === 'Zdrave i kvalitetne biljke' ? 'first' : benefit === 'Podršku i stručne savete' ? 'second' : benefit === 'Pristupačne cene' ? 'third' : benefit === 'Brzu i efikasnu isporuku' ? 'fourth' : ''}`}></div>
                 <div className={`icon-flex d-flex ${benefit === 'Zdrave i kvalitetne biljke' ? 'checked' : ''}`} onClick={() => changeBenefit('Zdrave i kvalitetne biljke')}>
                     <FaFlask />
                 </div>
