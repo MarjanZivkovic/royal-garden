@@ -733,7 +733,7 @@ footer ul li a:hover{
 }
 /* ABOUT US PAGE */
 .about-page-hero{
-    background: url(./img/cvece-hero-3.jpg) no-repeat center center / cover;
+    background: url(./img/cvece-hero-mobile3.jpg) no-repeat center center / cover;
 }
 .single-image-hero-title{
     top: calc(75vh - 10rem);
@@ -842,10 +842,10 @@ footer ul li a:hover{
 }
 /* PRODUCTS PAGE */
 .flowers-hero1{
-    background: url(./img/cvece-hero-1.jpg) no-repeat center center / cover;
+    background: url(./img/cvece-hero-mobile1.jpg) no-repeat center center / cover;
 }
 .flowers-hero2{
-    background: url(./img/cvece-hero-2.jpg) no-repeat center center / cover;
+    background: url(./img/cvece-hero-mobile2.jpg) no-repeat center center / cover;
 }
 /* .flowers-hero3{
     background: url(./img/cvece-hero-3.jpg) no-repeat center center / cover;
@@ -992,13 +992,13 @@ footer ul li a:hover{
 }
 /* TREES PAGE */
 .trees-hero1{
-    background: url(./img/drvece-hero1.jpg) no-repeat center center / cover;
+    background: url(./img/drvece-hero-mobile1.jpg) no-repeat center center / cover;
 }
 .trees-hero2{
-    background: url(./img/drvece-hero2.jpg) no-repeat center center / cover;
+    background: url(./img/drvece-hero-mobile2.jpg) no-repeat center center / cover;
 }
 .trees-hero3{
-    background: url(./img/drvece-hero3.jpg) no-repeat center center / cover;
+    background: url(./img/drvece-hero-mobile3.jpg) no-repeat center center / cover;
 }
 .trees-hero1.show1, .trees-hero2.show2, .trees-hero3.show3{
     opacity: 1;
@@ -1195,8 +1195,28 @@ footer ul li a:hover{
         background-position: center 70%;
     }
     /* about */
+    .about-page-hero{
+        background: url(./img/cvece-hero-3.jpg) no-repeat center center / cover;
+    }
     .big-num-container{
         justify-content: center;
+    }
+    /* products */
+    .flowers-hero1{
+        background: url(./img/cvece-hero-1.jpg) no-repeat center center / cover;
+    }
+    .flowers-hero2{
+        background: url(./img/cvece-hero-2.jpg) no-repeat center center / cover;
+    }
+    /* trees */
+    .trees-hero1{
+        background: url(./img/drvece-hero1.jpg) no-repeat center center / cover;
+    }
+    .trees-hero2{
+        background: url(./img/drvece-hero2.jpg) no-repeat center center / cover;
+    }
+    .trees-hero3{
+        background: url(./img/drvece-hero3.jpg) no-repeat center center / cover;
     }
     /* services */
     .technology h2{
