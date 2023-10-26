@@ -4,7 +4,7 @@
     --primary-black: #0f1014;
     --primary-yellow: #ffe9a0;
 }
-/* general styles us */
+/* general styles */
 *, *::after, *::before{
     box-sizing: border-box;
     flex-wrap: wrap;
@@ -49,7 +49,7 @@ a, button, input, select{
     color: inherit;
     text-decoration: none;
 }
-/* global classes us */
+/* global classes */
 .wrapper{
     width: calc(100% - 3rem);
     max-width: 480px;
@@ -98,7 +98,7 @@ a, button, input, select{
     margin: 0;
     transform: translateY(-50%);
 }
-/* navigation us */
+/* navigation */
 .main-nav{
     max-width: 1920px;
     position: fixed;
@@ -207,7 +207,7 @@ a, button, input, select{
     font-size: 0.75rem;
     padding-top: 2rem;
 }
-/* starting animation us */
+/* starting animation */
 @keyframes start {
     0% {
         transform: translateY(0);
@@ -241,7 +241,7 @@ a, button, input, select{
 .start-container img{
     animation: skeleton 1s linear infinite alternate;
 }
-/* hero us */
+/* hero */
 .main{
     min-height: 75vh;
     min-height: 75dvh;
@@ -324,7 +324,7 @@ a, button, input, select{
     font-size: 1.5rem;
     margin-top: 4rem;
 }
-/* our-products us */
+/* our-products */
 .our-products{
     position: relative;
     padding: 4rem 0 8rem;
@@ -390,7 +390,7 @@ a, button, input, select{
 .our-products .link-btn:hover{
     background-color: transparent;
 }
-/* our work us */
+/* our work */
 .our-work{
     margin-top: 5rem;
     background: url(./img/yellow-bcknd.jpg) no-repeat center bottom / cover;
@@ -415,7 +415,7 @@ a, button, input, select{
     padding-left: 2rem;
 }
 
-/* why us us */
+/* why us */
 .why-us{
     --blue: #0066cb;
 }
@@ -490,7 +490,7 @@ a, button, input, select{
     font-size: 1.15rem;
     background-color: var(--primary-yellow);
 }
-/* gallery us */
+/* gallery */
 .gallery{
     padding: 3rem 0 8rem;
     background-color: #fff;
@@ -566,7 +566,7 @@ a, button, input, select{
     width: 100%;
     cursor: pointer;
 }
-/* testimonials us */
+/* testimonials */
 .testimonials{
     background: url(./img/black-bcknd.jpg) no-repeat center bottom / cover;
 }
@@ -608,7 +608,7 @@ a, button, input, select{
     font-style: italic;
     margin: 1rem 0.5rem;
 }
-/* partners us */
+/* partners */
 .partners{
     padding-bottom: 10rem;
 }
@@ -626,7 +626,7 @@ a, button, input, select{
 .partner-imgs a:nth-of-type(3) img{
     border-radius: 50%;
 }
-/* map us */
+/* map */
 .map .location{
     padding: 1rem 0 5rem;
 }
@@ -647,7 +647,7 @@ a, button, input, select{
     border:  2px solid var(--primary-yellow);
     border-radius: 5px;
 }
-/* contact us */
+/* contact */
 .contact, footer{
     background-color: #fff;
 }
@@ -663,7 +663,7 @@ a, button, input, select{
     margin-right: 0.5rem;
     font-size: 1.25rem;
 }
-/* footer us */
+/* footer */
 footer{
     padding: 2rem 0 0;
 }
@@ -722,7 +722,7 @@ footer ul li a:hover{
 .go-to-top svg:hover{
     color: var(--primary-yellow);
 }
-/* Error page us */
+/* Error page */
 .error-container a{
     display: block;
     text-decoration: underline;
@@ -731,7 +731,7 @@ footer ul li a:hover{
 .error-container a:hover{
     color: var(--primary-yellow);
 }
-/* ABOUT US PAGE us */
+/* ABOUT US PAGE  */
 .about-page-hero{
     background: url(./img/cvece-hero-mobile3.jpg) no-repeat center center / cover;
 }
@@ -741,7 +741,7 @@ footer ul li a:hover{
 .our-intro.about-us{
     padding: 6rem 0;
 }
-/* counting numbers us */
+/* counting numbers */
 .big-num-container{
     justify-content: flex-start;
     font-size: 1.5rem;
@@ -765,7 +765,7 @@ footer ul li a:hover{
 .smaller-nums .h-0{
     font-size: 3.5rem;
 }
-/* our-story us */
+/* our-story */
 .our-story{
     background-color: #fff;
     padding-bottom: 6rem;
@@ -779,7 +779,7 @@ footer ul li a:hover{
     padding: 0 1rem;
     font-size: 0.85rem;
 }
-/* square-meters us */
+/* square-meters */
 .square-meters ul{
     padding: 6rem 0 0;
     font-size: 1.2rem;
@@ -791,7 +791,7 @@ footer ul li a:hover{
     font-size: 1.5rem;
     font-weight: 900;
 }
-/* our mission us */
+/* our mission */
 .mission.our-work{
     margin: 0;
     padding-bottom: 6rem;
@@ -800,7 +800,7 @@ footer ul li a:hover{
     text-transform: uppercase;
     font-weight: 500;
 }
-/* sales us */
+/* sales */
 .transparent-testimonial{
     background: transparent;
 }
@@ -840,7 +840,7 @@ footer ul li a:hover{
 .total-sale .h-0{
     font-size: 2.75rem;
 }
-/* PRODUCTS PAGE us */
+/* PRODUCTS PAGE */
 .flowers-hero1{
     background: url(./img/cvece-hero-mobile1.jpg) no-repeat center center / cover;
 }
@@ -917,7 +917,7 @@ footer ul li a:hover{
 .ask-for-more{
     padding: 0 0 5rem;
 }
-/* hrizanteme page us */
+/* hrizanteme page */
 .hrizantema-container{
     padding: 5rem 0 7rem;
 }
@@ -987,7 +987,7 @@ footer ul li a:hover{
 .flower-container .link-btn > *:first-child{
     margin-right: 1rem;
 }
-/* TREES PAGE us */
+/* TREES PAGE */
 .trees-hero1{
     background: url(./img/drvece-hero-mobile1.jpg) no-repeat center center / cover;
 }
@@ -1045,7 +1045,7 @@ footer ul li a:hover{
     margin-left: auto;
     margin-top: 0;
 }
-/* SINGLE TREE PAGE us */
+/* SINGLE TREE PAGE */
 .tree-container{
     background-color: #fff;
     padding-bottom: 0;
@@ -1070,7 +1070,7 @@ footer ul li a:hover{
 .tree-container .link-btn{
     margin: 0 auto;
 }
-/* SERVICES PAGE us */
+/* SERVICES PAGE */
 .services-page-hero{
     background: url(./img/usluge-hero-mobile.jpg) no-repeat left center / cover;
 }
@@ -1139,12 +1139,12 @@ footer ul li a:hover{
     max-width: 500px;
 }
 
-/* RESPONSIVE us */
+/* RESPONSIVE */
 @media (min-width: 600px){
     html{
         font-size: 18px;
     }
-    /* home us */
+    /* home */
     .wrapper{
         max-width: 460px;
     }
@@ -1210,14 +1210,14 @@ footer ul li a:hover{
     .big-num-container{
         justify-content: center;
     }
-    /* products us */
+    /* products */
     .flowers-hero1{
         background: url(./img/cvece-hero-1.jpg) no-repeat center center / cover;
     }
     .flowers-hero2{
         background: url(./img/cvece-hero-2.jpg) no-repeat center center / cover;
     }
-    /* trees us */
+    /* trees */
     .trees-hero1{
         background: url(./img/drvece-hero1.jpg) no-repeat center center / cover;
     }
@@ -1227,7 +1227,7 @@ footer ul li a:hover{
     .trees-hero3{
         background: url(./img/drvece-hero3.jpg) no-repeat center center / cover;
     }
-    /* services us */
+    /* services */
     .services-page-hero{
         background: url(./img/usluge-hero.jpg) no-repeat left top / cover;
     }
@@ -1358,11 +1358,11 @@ footer ul li a:hover{
     .sales ul{
         width: fit-content;
     }
-    /* flowers page us */
+    /* flowers page */
     .flowers-hero-title{
         top: -20rem;
     }
-    /* trees page us */
+    /* trees page */
     .trees-hero-title{
         top: -20.15rem;
     }
@@ -1378,7 +1378,7 @@ footer ul li a:hover{
         position: relative;
         top: 0;
     }
-    /* services us */
+    /* services */
     .our-team .d-flex > *{
         flex: 1;
     }
@@ -1464,7 +1464,7 @@ footer ul li a:hover{
     .total-sale .h-0{
         font-size: 3.5rem;
     }    
-    /* products us */
+    /* products */
     .ask-for-more .wrapper{
         width: 480px;
     }
@@ -1490,7 +1490,7 @@ footer ul li a:hover{
     .products-display-ul li{
         margin: 2rem 0.5rem;
     }
-    /* trees us */
+    /* trees */
     .deciduous-pic{
         max-width: 960px;
         margin: auto;
@@ -1502,7 +1502,7 @@ footer ul li a:hover{
     .tree-info-container .svg-icons{
         grid-template-columns: repeat(3, 1fr);
     }
-    /* services us */
+    /* services */
     .list-of-services{
         max-width: 960px;
         margin: auto;
