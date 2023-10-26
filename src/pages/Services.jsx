@@ -10,6 +10,7 @@ import stadion1 from '../servicesImg/stadion1.jpg';
 import stadion2 from '../servicesImg/stadion2.jpg';
 import stadion3 from '../servicesImg/stadion3.jpg';
 import stadion4 from '../servicesImg/stadion4.jpg';
+import stadion5 from '../servicesImg/stadion5.jpg';
 import akva1 from '../servicesImg/akva1.jpg';
 import akva2 from '../servicesImg/akva2.jpg';
 import akva3 from '../servicesImg/akva3.jpg';
@@ -28,7 +29,7 @@ import kuca2 from '../servicesImg/kuca2.jpg';
 import kuca3 from '../servicesImg/kuca3.jpg';
 import kuca4 from '../servicesImg/kuca4.jpg';
 
-const stadionArr = [ stadion1, stadion2, stadion3, stadion4 ];
+const stadionArr = [ stadion1, stadion2, stadion3, stadion4, stadion5 ];
 const akvaArr = [ akva1, akva2, akva3, akva4, akva5 ];
 const komplexArr = [ komplex1, komplex2, komplex3, komplex4 ];
 const mangirArr = [ mangir1, mangir2, mangir3, mangir4 ];

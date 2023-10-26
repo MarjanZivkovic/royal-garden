@@ -262,16 +262,16 @@ a, button, input, select{
     transition: all ease-in-out 3s;
 }
 .home-hero1{
-    background: url(./img/home1.jpg) no-repeat center center / cover;
+    background: url(./img/home-mobile1.jpg) no-repeat center center / cover;
 }    
 .home-hero2{
-    background: url(./img/home2.jpg) no-repeat center center / cover;
+    background: url(./img/home-mobile2.jpg) no-repeat center center / cover;
 }
 .home-hero3{
-    background: url(./img/home3.jpg) no-repeat center center / cover;
+    background: url(./img/home-mobile3.jpg) no-repeat center center / cover;
 }
 .home-hero4{
-    background: url(./img/home4.jpg) no-repeat center center / cover;
+    background: url(./img/home-mobile4.jpg) no-repeat center center / cover;
 }
 .home-hero1.show1, .home-hero2.show2, .home-hero3.show3, .home-hero4.show4{
     opacity: 1;
@@ -1075,7 +1075,7 @@ footer ul li a:hover{
 }
 /* SERVICES PAGE */
 .services-page-hero{
-    background: url(./img/usluge-hero.jpg) no-repeat left center / cover;
+    background: url(./img/usluge-hero-mobile.jpg) no-repeat left center / cover;
 }
 .upper{
     text-transform: uppercase;
@@ -1151,6 +1151,18 @@ footer ul li a:hover{
     .wrapper{
         max-width: 460px;
     }
+    .home-hero1{
+        background: url(./img/home1.jpg) no-repeat center center / cover;
+    }    
+    .home-hero2{
+        background: url(./img/home2.jpg) no-repeat center center / cover;
+    }
+    .home-hero3{
+        background: url(./img/home3.jpg) no-repeat center center / cover;
+    }
+    .home-hero4{
+        background: url(./img/home4.jpg) no-repeat center center / cover;
+    }
     .link-btn{
         font-size: 0.9rem;
     }
@@ -1219,6 +1231,9 @@ footer ul li a:hover{
         background: url(./img/drvece-hero3.jpg) no-repeat center center / cover;
     }
     /* services */
+    .services-page-hero{
+        background: url(./img/usluge-hero.jpg) no-repeat left top / cover;
+    }
     .technology h2{
         text-align: center;
     }
@@ -1257,9 +1272,6 @@ footer ul li a:hover{
         width: max-content;
         margin: auto;
     }
-    /* .our-work ul li{
-        justify-content: center;
-    } */
     .best-kaliopa, .crown-div{
         display: flex;
         align-items: center;
