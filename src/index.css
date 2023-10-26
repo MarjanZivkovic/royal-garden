@@ -847,9 +847,6 @@ footer ul li a:hover{
 .flowers-hero2{
     background: url(./img/cvece-hero-mobile2.jpg) no-repeat center center / cover;
 }
-/* .flowers-hero3{
-    background: url(./img/cvece-hero-3.jpg) no-repeat center center / cover;
-} */
 .flowers-hero1.show1, .flowers-hero2.show2, .flowers-hero3.show3{
     opacity: 1;
 }
@@ -920,7 +917,7 @@ footer ul li a:hover{
 .ask-for-more{
     padding: 0 0 5rem;
 }
-/* hrizanteme */
+/* hrizanteme page */
 .hrizantema-container{
     padding: 5rem 0 7rem;
 }
