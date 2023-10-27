@@ -53,7 +53,7 @@ function scrollToTop(){
 
 const router = createBrowserRouter([
   {
-    path: '/', 
+    path: '', 
     element: <Root />,
     errorElement: <ErrorPage onLink={scrollToTop}/>,
     children: [
