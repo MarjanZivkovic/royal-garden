@@ -382,7 +382,7 @@ a, button, input, select{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -125%);
+    transform: translate(-50%, -50%);
     background-color: var(--primary-black);
     color: var(--primary-yellow);
     z-index: 2;
